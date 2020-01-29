@@ -43,7 +43,6 @@ Ziel dieser Probe-IPA ist die Authentifizierung und das Sessionmanagement neu zu
 
 #### Funktionale Anforderungen
 * Aussagekräftigere Notifications beim Logout/Login: z.B. beim [automatischen Logout](https://github.com/puzzle/cryptopus/issues/169)
-* Die LDAP Einstellungen sollen künftig nicht mehr übers UI sondern nur noch über Umgebungsvariablen oder Configfiles konfiguriert werden
 
 ### Individuelle Beurteilungskriterien
 
