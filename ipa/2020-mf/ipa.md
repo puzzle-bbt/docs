@@ -25,13 +25,13 @@ Akzeptieren mehrer Files als Archiv
 ## 7 individuellen Kriterien
 
 
-225: Leitfrage Versionsverwaltung mit Verwaltungs-SW
-231: Projektjournal
-124: Testfälle
-250: Schichtentrennung
-162: Entwurf - SW-Architektur
-165: Implementierung von Lösungen
-166: Codingstyle - lesbarer Code
+  * 225: Leitfrage Versionsverwaltung mit Verwaltungs-SW
+  * 231: Projektjournal
+  * 159: Problemanalyse (Programmieren)
+  * 250: Schichtentrennung
+  * 162: Entwurf - SW-Architektur
+  * 165: Implementierung von Lösungen
+  * 166: Codingstyle - lesbarer Code
 
 
 ## Mittel und Methoden:
