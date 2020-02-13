@@ -4,17 +4,17 @@
 
 ### Titel
 
-Keycloak/OAuth2 Anbindung Cryptopus Password Manager
+Keycloak/OpenID Connect Integration Cryptopus
 
 ### Beschreibung
 
-Erweiterung des Open Source Pasword Manager Cryptopus für Single-Sign-On via Keycloak/OAuth2
+Erweiterung des Open Source Pasword Manager Cryptopus für Single-Sign-On via Keycloak/OpenID Connect
 
 ## Detailbeschrieb
 
 ### Titel der Arbeit
 
-Keycloak/OAuth2 Anbindung Cryptopus Password Manager
+Keycloak/OpenID Connect Integration Cryptopus
 
 ### Ausgangslage
 
