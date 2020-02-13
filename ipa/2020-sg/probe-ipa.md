@@ -35,7 +35,7 @@ Ziel dieser Probe-IPA ist die Authentifizierung und das Sessionmanagement neu zu
 * Dokumentieren der Sicherheitstechnischen Anforderungen
 * Dokumentation der beteiligten Abläufe/Prozesse
 * Visualisierung und Beschreibung der bestehenden Komponenten
-* Beschreiben der benötigten Basics/Komponenten von https://github.com/heartcombo/devise
+* Beschreiben der benötigten Basics/Komponenten von [Devise](https://github.com/heartcombo/devise)
 * Konzeption Integration/Refactoring Devise
 * Planung der Umsetzung PoC
 * Durchführen PoC
@@ -45,6 +45,9 @@ Ziel dieser Probe-IPA ist die Authentifizierung und das Sessionmanagement neu zu
 * Aussagekräftigere Notifications beim Logout/Login: z.B. beim [automatischen Logout](https://github.com/puzzle/cryptopus/issues/169)
 
 ### Individuelle Beurteilungskriterien
+
+* 235 - Entwurf mit UML
+* 
 
 ### Mittel und Methoden
 

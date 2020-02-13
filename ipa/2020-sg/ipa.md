@@ -32,8 +32,9 @@ Der komplette Source-Code steht auf Github zur Verfügung: https://github.com/pu
 * Zusammentragen/Beschreiben der heute realisierten Features
 
 #### Funktionale Anforderungen
-* Root und API-Accounts können sich immer noch direkt an Cryptopus ohne Keycloak authentifizieren
-* 
+* API-Accounts können sich immer noch direkt an Cryptopus ohne Keycloak authentifizieren
+* Login via Root ist nur noch via private IP möglich
+* Es wird keine Login-Maske im Cryptopus angezeigt falls Keycloak/OpenID Auth aktiv (Ausnahme root via local IP)
 
 ### Individuelle Beurteilungskriterien
 
