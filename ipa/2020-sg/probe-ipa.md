@@ -54,6 +54,14 @@ Ziel dieser Probe-IPA ist die Authentifizierung und das Sessionmanagement neu zu
 ### Vorkenntnisse
 
 ### Vorarbeiten
+*Welche Arbeiten werden als Vorbereitung schon vor der IPA ausgeführt?*
+
+Vorarbeiten seit Oktober 2019:
+
+* Einführung in die Entwicklung mit Ruby, Ruby on Rails
+* Umsetzung, Konzeption von neuen Features in Cryptopus
+* Bugfixing Cryptopus
+* Workshop zu Keycloak Setup/Administration
 
 ### Neue Lerninhalte
 
