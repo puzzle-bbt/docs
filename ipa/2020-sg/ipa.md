@@ -43,7 +43,7 @@ Sylvain wird einige vorbereitenden Arbeiten als Basis für diese IPA erledigen d
 * API-User können sich immer noch direkt an Cryptopus für den Zugriff auf /api ohne Keycloak authentifizieren
 * Es wird keine Login-Maske in Cryptopus angezeigt falls die Authentifizierung via Keycloak/OpenID erfolgt
 * Die Login-Maske kann von einer lokalen IP aufgerufen werden um sich per root einzuloggen. (Fallback Login wenn Keycloak nicht mehr verfügbar)
-* Die generierte PK_SECRET_BASE welche auf dem Keycloak Server im Benutzer-Attribut abgespeichert wird soll ein Random Token sein der aktuellen Sicherheitsstandards entspricht (Länge, Komplexität)
+* Die generierte PK_SECRET_BASE welche auf dem Keycloak Server im Benutzer-Attribut abgespeichert wird soll ein Random Token sein der aktuellen Sicherheitsstandards entspricht (Länge, Komplexität, Zufallssicherheit)
 
 ### Individuelle Beurteilungskriterien
 * 235 - Entwurf mit UML
