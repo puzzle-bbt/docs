@@ -30,6 +30,7 @@ Der komplette Source-Code steht auf Github zur Verfügung: https://github.com/pu
 
 #### Nicht funktionale Anforderungen
 * Zusammentragen/Beschreiben der heute realisierten Features
+* Migrationskonzept für die Umstellung von der LDAP Authentifizierung auf SSO mit Keycloak
 
 #### Funktionale Anforderungen
 * API-Accounts können sich immer noch direkt an Cryptopus ohne Keycloak authentifizieren
