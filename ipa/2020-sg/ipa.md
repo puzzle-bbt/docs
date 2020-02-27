@@ -32,7 +32,6 @@ Vorgängig wurde bereits konzipiert wie sich dieses Problem lösen lässt. In Ke
 Sylvain wird einige vorbereitenden Arbeiten als Basis für diese IPA erledigen da die Komplexität und der Aufwand den Rahmen einer IPA sonst sprengen würden.
 
 #### Nicht funktionale Anforderungen
-* Zusammentragen/Beschreiben der heute realisierten Features
 * Migrationskonzept für die Umstellung der LDAP Authentifizierung auf SSO mit Keycloak (Nur Konzept, keine technische Umsetzung)
 * Eine Anleitung beschreibt wie man Cryptopus zusammen mit Keycloak einrichtet und betreibt
 
