@@ -81,7 +81,7 @@ Projektmethode:
 
 Konventionen:
 
-* Backend: Es gilt der Ruby Style Guide (https://github.com/rubocop-hq/ruby-style-guide) und der Rails Style Guide (https://github.com/rubocop-hq/rails-style-guide) gemäss Rubocop Konfiguration des Projekts (https://github.com/puzzle/cryptopus/blob/master/.rubocop.yml)
+Es gilt der Ruby Style Guide (https://github.com/rubocop-hq/ruby-style-guide) und der Rails Style Guide (https://github.com/rubocop-hq/rails-style-guide) gemäss Rubocop Konfiguration des Projekts (https://github.com/puzzle/cryptopus/blob/master/.rubocop.yml)
 
 ### Vorkenntnisse
 Sylvain hat für Cryptopus bereits einige Features umgesetzt. Mit Ruby bzw. Ruby on Rails Techstack arbeitet er seit Oktober 2019. Zum Thema Keycloak Setup und Administration besuchte er eine eintägige, interne Schulung. 
