@@ -33,14 +33,16 @@ Sylvain wird einige vorbereitenden Arbeiten als Basis für diese IPA erledigen d
 
 #### Nicht funktionale Anforderungen
 * Zusammentragen/Beschreiben der heute realisierten Features
-* Migrationskonzept für die Umstellung von der LDAP Authentifizierung auf SSO mit Keycloak
+* Migrationskonzept für die Umstellung der LDAP Authentifizierung auf SSO mit Keycloak (Nur Konzept, keine technische Umsetzung)
 
 #### Funktionale Anforderungen
 * Falls der Benutzer auf Cryptopus zugreift ohne das er sich vorher am Keycloak Server authentifiziert hat, wird er auf die Login-Maske des Keycloak Servers umgeleitet
-* 
-* API-Accounts können sich immer noch direkt an Cryptopus für den Zugriff auf /api ohne Keycloak authentifizieren
+* Der Benutzer wird nach erfolgreichem Login auf dem Keycloak Server auf die initial angefragte Cryptopus URL weitergeleitet
+* Hat der Benutzer bereits eine gültige SSO Session, wird er bei Cryptopus automatisch angemeldet
+* API-User können sich immer noch direkt an Cryptopus für den Zugriff auf /api ohne Keycloak authentifizieren
 * Es wird keine Login-Maske in Cryptopus angezeigt falls die Authentifizierung via Keycloak/OpenID erfolgt
 * Die Login-Maske kann von einer lokalen IP aufgerufen werden um sich per root einzuloggen. (Fallback Login wenn Keycloak nicht mehr verfügbar)
+* Die generierte PK_SECRET_BASE welche auf dem Keycloak Server im Benutzer-Attribut abgespeichert wird soll ein Random Token sein der aktuellen Sicherheitsstandards entspricht (Länge, Komplexität)
 
 ### Individuelle Beurteilungskriterien
 * 235 - Entwurf mit UML
@@ -53,7 +55,36 @@ Sylvain wird einige vorbereitenden Arbeiten als Basis für diese IPA erledigen d
 
 ### Mittel und Methoden
 
+Technologie und Plattform:
+
+* Ruby, Ruby on Rails, Active Record
+* MySQL
+* HTML, ERB
+* Sentry
+* Keycloak, OpenID Connect
+
+Entwicklungsumgebung:
+
+* Atom
+* GIT
+* Rake
+* Rubocop
+
+Textverarbeitung und Diagramme:
+
+* LibreOffice
+* draw.io
+
+Projektmethode:
+
+* HERMES
+
+Konventionen:
+
+* Backend: Es gilt der Ruby Style Guide (https://github.com/rubocop-hq/ruby-style-guide) und der Rails Style Guide (https://github.com/rubocop-hq/rails-style-guide) gemäss Rubocop Konfiguration des Projekts (https://github.com/puzzle/cryptopus/blob/master/.rubocop.yml)
+
 ### Vorkenntnisse
+Sylvain hat für Cryptopus bereits einige Features umgesetzt. Mit Ruby bzw. Ruby on Rails Techstack arbeitet er seit Oktober 2019. Zum Thema Keycloak Setup und Administration besuchte er eine eintägige, interne Schulung. 
 
 ### Vorarbeiten
 * Aufbau der benötigten lokalen Entwicklungs-Infrastruktur mit Keycloak
@@ -63,10 +94,12 @@ Sylvain wird einige vorbereitenden Arbeiten als Basis für diese IPA erledigen d
 * Proof of Concept für das schreiben und lesen von Benutzer-Attributen in Keycloak
 
 ### Neue Lerninhalte
+Grundsätzlich wird Sylvain bis zur IPA mit allen technologischen Elementen zumindest einmal in Berührung gekommen sein. Die Herausforderung dieser IPA wird vorallem darin bestehen die einzelnen Komponenten zu einem funktionierenden Gesamtsystem zu verbinden. Dies betrifft nicht nur die Umsetzung, sondern auch die vorangehende Konzeption.
 
 ### Arbeiten in den letzten 6 Monaten
 
 * Einführung in die Entwicklung mit Ruby, Ruby on Rails
+* Konzeption und Umsetzung des Ausbildungsplan Tools (Ruby, HTML) https://github.com/puzzle-bbt/ausbildungsplan
 * Umsetzung, Konzeption von neuen Features in Cryptopus
 * Bugfixing Cryptopus
 * Workshop zu Keycloak Setup/Administration
