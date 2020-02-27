@@ -37,7 +37,7 @@ Ziel dieser Probe-IPA ist die Authentifizierung und das Sessionmanagement neu zu
 * Visualisierung und Beschreibung der bestehenden Komponenten
 * Beschreiben der benötigten Basics/Komponenten von [Devise](https://github.com/heartcombo/devise)
 * Konzeption Integration/Refactoring Devise
-* Planung der Umsetzung PoC
+* Planung der Umsetzung Proof of Concept (PoC)
 * Durchführen PoC
 * Auswertung/Fazit PoC
 
@@ -56,22 +56,50 @@ Ziel dieser Probe-IPA ist die Authentifizierung und das Sessionmanagement neu zu
 * ohne 230 - Migration (dies wird nur in der IPA selber bewertet da es hier keine Migration gibt)
 
 ### Mittel und Methoden
+Technologie und Plattform:
 
+* Ruby, Ruby on Rails, Active Record
+* MySQL
+* HTML, ERB
+* Sentry
+
+Entwicklungsumgebung:
+
+* Atom
+* GIT
+* Rake
+* Rubocop
+
+Textverarbeitung und Diagramme:
+
+* LibreOffice
+* draw.io
+
+Projektmethode:
+
+* HERMES
+
+Konventionen:
+
+* Backend: Es gilt der Ruby Style Guide (https://github.com/rubocop-hq/ruby-style-guide) und der Rails Style Guide (https://github.com/rubocop-hq/rails-style-guide) gemäss Rubocop Konfiguration des Projekts (https://github.com/puzzle/cryptopus/blob/master/.rubocop.yml)
 
 ### Vorkenntnisse
+-
 
 ### Vorarbeiten
-*Welche Arbeiten werden als Vorbereitung schon vor der IPA ausgeführt?*
+-
 
-Vorarbeiten seit Oktober 2019:
+### Neue Lerninhalte
+
+* Devise Gem
+* PoC mit Auswertung
+
+### Arbeiten in den letzten 6 Monaten
 
 * Einführung in die Entwicklung mit Ruby, Ruby on Rails
 * Umsetzung, Konzeption von neuen Features in Cryptopus
 * Bugfixing Cryptopus
 * Workshop zu Keycloak Setup/Administration
-
-### Neue Lerninhalte
-
-### Arbeiten in den letzten 6 Monaten
+* LDAP Config über ENV-Variablen anstatt DB-Settings
 
 ### Bemerkungen
