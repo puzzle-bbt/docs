@@ -14,7 +14,7 @@ Die gewählten Visualisierungen sind sinnvoll gewählt und helfen die Konzepte z
 
 ### Gütestufe 3
 1. Die gewählten UML Elemente sind sinnvoll eingesetzt und helfen das Problem/die Anforderungen sowie die Konzepte zu verstehen
-2. Die Use Cases beschreiben vollständig die wichtigsten Abläufe aus Benutzersicht
+2. Die Use Cases und/oder Diagramme beschreiben vollständig die wichtigsten Abläufe aus Benutzersicht
 3. Die gewählten UML Elemente sind korrekt nach UML 2.0 dargestellt
 
 ### Gütestufe 2
