@@ -34,6 +34,7 @@ Sylvain wird einige vorbereitenden Arbeiten als Basis für diese IPA erledigen d
 #### Nicht funktionale Anforderungen
 * Zusammentragen/Beschreiben der heute realisierten Features
 * Migrationskonzept für die Umstellung der LDAP Authentifizierung auf SSO mit Keycloak (Nur Konzept, keine technische Umsetzung)
+* Eine Anleitung beschreibt wie man Cryptopus zusammen mit Keycloak einrichtet und betreibt
 
 #### Funktionale Anforderungen
 * Falls der Benutzer auf Cryptopus zugreift ohne das er sich vorher am Keycloak Server authentifiziert hat, wird er auf die Login-Maske des Keycloak Servers umgeleitet
