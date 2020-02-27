@@ -48,9 +48,15 @@ Ziel dieser Probe-IPA ist die Authentifizierung und das Sessionmanagement neu zu
 ### Individuelle Beurteilungskriterien
 
 * 235 - Entwurf mit UML
-* 
+* 166 - Lesbarer Code
+* 162 - SW-Architektur
+* 170 - Systematik Lösung
+* 124 - Testfälle (Programmierung)
+* 192 - IT-Sicherheitskriterien
+* ohne 230 - Migration (dies wird nur in der IPA selber bewertet da es hier keine Migration gibt)
 
 ### Mittel und Methoden
+
 
 ### Vorkenntnisse
 
