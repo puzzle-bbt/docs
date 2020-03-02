@@ -28,7 +28,7 @@ Der komplette Source-Code steht auf Github zur Verfügung: https://github.com/pu
 
 Ziel dieser Probe-IPA ist die Authentifizierung und das Sessionmanagement neu zu konzipieren und basierend darauf ein Proof of Concept (PoC) zu realisieren:
 
-(Alle Anforderungen beziehen sich auf den Bereich Authentifizierung/Sessionmanagement und die angrenzenden Komponenten)
+Alle Anforderungen beziehen sich auf den Bereich Authentifizierung/Sessionmanagement und die angrenzenden Komponenten
 
 #### Nicht funktionale Anforderungen
 * Zusammentragen/Beschreiben der heute realisierten Features
@@ -84,10 +84,11 @@ Konventionen:
 * Backend: Es gilt der Ruby Style Guide (https://github.com/rubocop-hq/ruby-style-guide) und der Rails Style Guide (https://github.com/rubocop-hq/rails-style-guide) gemäss Rubocop Konfiguration des Projekts (https://github.com/puzzle/cryptopus/blob/master/.rubocop.yml)
 
 ### Vorkenntnisse
--
+Sylvain hat für Cryptopus bereits einige Features umgesetzt. Mit Ruby bzw. Ruby on Rails Techstack arbeitet er seit Oktober 2019.
 
 ### Vorarbeiten
--
+* Vorbereitung Dokumentvorlage
+* Studium Devise Gem
 
 ### Neue Lerninhalte
 
