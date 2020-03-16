@@ -26,7 +26,7 @@ Der komplette Source-Code steht auf Github zur Verfügung: https://github.com/pu
 
 ### Detailierte Aufgabenstellung
 
-Puzzle betreibt seit ein bis zwei Jahren einen Keycloak Server um Single-Sign-On (SSO) für die internen Web-Dienste zu ermöglichen. Auch für Cryptopus soll es künftig möglich sein sich über SSO anzumelden ohne das der Benutzer jedesmal seine Credentials eingeben muss. Ziel dieser IPA ist diese Integration zu implementieren. 
+Puzzle betreibt seit ein bis zwei Jahren einen Keycloak Server um Single-Sign-On (SSO) für die internen Web-Dienste zu ermöglichen. Auch für Cryptopus soll es künftig möglich sein sich über SSO anzumelden ohne das der Benutzer jedesmal seine Credentials eingeben muss. Heute unterstützt Cryptopus die Authentifizierung via interner User-DB oder über LDAP. Ziel dieser IPA ist die Authentifizierung in Cryptopus für Keycloak zu erweitern. 
 Die sensitiven Daten werden in Cryptopus verschlüsselt in der Datenbank abgelegt. Bei der heutigen Implementation ist Cryptopus auf das Benutzer-Passwort angewiesen um die RSA Private Keys zu entschlüsseln. 
 Vorgängig wurde bereits konzipiert wie sich dieses Problem lösen lässt. In Keycloak wird ein spezielles Benutzer-Attribut konfiguriert in welchem eine entsprechende Passphrase gespeichert wird. 
 Sylvain wird einige vorbereitenden Arbeiten als Basis für diese IPA erledigen da die Komplexität und der Aufwand den Rahmen einer IPA sonst sprengen würden.
