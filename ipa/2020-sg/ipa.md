@@ -26,7 +26,8 @@ Der komplette Source-Code steht auf Github zur Verfügung: https://github.com/pu
 
 ### Detailierte Aufgabenstellung
 
-Puzzle betreibt seit ein bis zwei Jahren einen Keycloak Server um Single-Sign-On (SSO) für die internen Web-Dienste zu ermöglichen. Auch für Cryptopus soll es künftig möglich sein sich über SSO anzumelden ohne das der Benutzer jedesmal seine Credentials eingeben muss. Heute unterstützt Cryptopus die Authentifizierung via interner User-DB oder über LDAP. Ziel dieser IPA ist die Authentifizierung in Cryptopus für Keycloak zu erweitern. 
+Puzzle betreibt seit ein bis zwei Jahren einen Keycloak Server um Single-Sign-On (SSO) für die internen Web-Dienste zu ermöglichen. Auch für Cryptopus soll es künftig möglich sein sich über SSO anzumelden ohne das der Benutzer jedesmal seine Credentials eingeben muss. 
+Heute unterstützt Cryptopus die Authentifizierung via interner User-DB oder über LDAP. Ziel dieser IPA ist die Authentifizierung in Cryptopus für Keycloak zu erweitern. Dazu muss der Applikationscode rund um die Authentifizierung entsprechend erweitert werden. 
 Die sensitiven Daten werden in Cryptopus verschlüsselt in der Datenbank abgelegt. Bei der heutigen Implementation ist Cryptopus auf das Benutzer-Passwort angewiesen um die RSA Private Keys zu entschlüsseln. 
 Vorgängig wurde bereits konzipiert wie sich dieses Problem lösen lässt. In Keycloak wird ein spezielles Benutzer-Attribut konfiguriert in welchem eine entsprechende Passphrase gespeichert wird. 
 Sylvain wird einige vorbereitenden Arbeiten als Basis für diese IPA erledigen da die Komplexität und der Aufwand den Rahmen einer IPA sonst sprengen würden.
@@ -37,6 +38,8 @@ Sylvain wird einige vorbereitenden Arbeiten als Basis für diese IPA erledigen d
 * Die verwendeten Kryptografie-Algorithmen und Schlüssel entsprechen aktuellen Sicherheitsstandards (Länge, Komplexität, Zufallssicherheit)
 
 #### Funktionale Anforderungen
+* Als neuer Auth-Provider kann neben Interner-DB und LDAP neu auch OpenID Connect/Keycloak konfiguriert werden
+* Es kann immer nur ein Auth-Provider aktiv sein. Ein Mix zwischen LDAP und OpenID Connect ist beispielsweise nicht möglich
 * Falls der Benutzer auf Cryptopus zugreift ohne das er sich vorher am Keycloak Server authentifiziert hat, wird er auf die Login-Maske des Keycloak Servers umgeleitet
 * Der Benutzer wird nach erfolgreichem Login auf dem Keycloak Server auf die initial angefragte Cryptopus URL weitergeleitet
 * Hat der Benutzer bereits eine gültige SSO Session, wird er bei Cryptopus automatisch angemeldet
