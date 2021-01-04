@@ -32,28 +32,32 @@ Mit dieser Arbeit soll eine minimale Ansicht für Personen ohne Rollen realisier
 
 #### Nicht funktionale Anforderungen
 
-* Dokumentieren der sicherheitstechnischen Anforderungen
-* Dokumentation der beteiligten Abläufe/Prozesse
+* Dokumentation und Umsetzung der sicherheitstechnischen Aspekte (Login, Session, Attacken)
+* Dokumentation der beteiligten Abläufe/Prozesse (Text, UML)
 
 #### Funktionale Anforderungen
 
 * Personen ohne Rollen:
-  * haben read/write Zugriff auf das eigene Profil (nur Info Tab)
+  * haben read/write Zugriff auf das eigene Profil
+  * haben read Zugriff auf Profil > Abos, Rechnungen, Verlauf, Log
   * keinen Zugriff auf "Eigenes Profil > Passwort setzen" falls noch nie ein Passwort gesetzt wurde
   * können die Anzeigesprache wechseln
   * sehen die Suchbar nicht und haben auch keinen Zugriff auf die Suchfunktion
   * sehen die Haupt-Navigation nicht und haben auch keinen Zugriff auf Gruppen, Anlässe, Einstellungen, usw.
 * Bei der externen Event Anmeldung ist der Zugriff auf "Kontaktdaten erfassen", "Anmeldung als Teilnehmer" sowie "Anmeldedetails" möglich (Workflow Externe Event Anmeldung)
 * Auf die Info Seite von Events mit externer Anmeldung kann ebenfalls zugegriffen werden
+* Hat sich die Person über "Du hast noch kein Login?" angemeldet, wird das Session Timeout auf 10min gesetzt
+* Besitzt eine Person bereits ein Login, kann diese sich nicht über "Du hast noch kein Login?" anmelden. (ggf. bereits vorhanden, verifizieren)
 
 ### Individuelle Beurteilungskriterien
 
 * 235 - Entwurf mit UML
-* 166 - Lesbarer Code
-* 162 - SW-Architektur
-* 170 - Systematik Lösung
-* 124 - Testfälle (Programmierung)
 * 192 - IT-Sicherheitskriterien
+* 166 - Lesbarer Code
+* 165 - Implementierung von Lösungen (Programmieren)
+* 124 - Testfälle (Programmierung)
+
+für die Probe IPA sind nur 5 anstatt 7 Kriterien vorhanden
 
 ### Mittel und Methoden
 Technologie und Plattform:
@@ -62,6 +66,7 @@ Technologie und Plattform:
 * MySQL
 * HTML, HAML
 * Sentry
+* Gems: Devise, cancan
 
 Entwicklungsumgebung:
 
@@ -77,14 +82,14 @@ Textverarbeitung und Diagramme:
 
 Projektmethode:
 
-* HERMES
+* tbd
 
 Konventionen:
 
 * Es gilt der Ruby Style Guide (https://github.com/rubocop-hq/ruby-style-guide), der Rails Style Guide (https://github.com/rubocop-hq/rails-style-guide) sowie die Projektdokumentation (https://github.com/hitobito/hitobito)
 
 ### Vorkenntnisse
-Nils arbeitet bereits seit einigen Monaten an Features von Hitobito. Ausserdem hat er bereits seit dem 2. Lehrjahr Erfahrungen in anderen Ruby on Rails Projekten gesammelt. 
+Nils arbeitet bereits seit einigen Monaten an Features von Hitobito. Ausserdem hat er bereits seit dem 2. Lehrjahr viel Erfahrung in anderen Ruby on Rails Projekten gesammelt. 
 
 ### Vorarbeiten
 * Vorbereitung Dokumentvorlage
@@ -92,6 +97,7 @@ Nils arbeitet bereits seit einigen Monaten an Features von Hitobito. Ausserdem h
 ### Neue Lerninhalte
 
 * Devise Gem, Authentifizierung
+* cancancan
 
 ### Arbeiten in den letzten 6 Monaten
 
