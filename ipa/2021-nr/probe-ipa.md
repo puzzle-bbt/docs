@@ -77,7 +77,7 @@ Entwicklungsumgebung:
 
 Textverarbeitung und Diagramme:
 
-* LibreOffice
+* Latex
 * draw.io
 
 Projektmethode:
