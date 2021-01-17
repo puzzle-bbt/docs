@@ -1,4 +1,4 @@
-# Scrum IPA (Entwurf)
+# Puzzle Scrum IPA 1.0 (Entwurf)
 
 [Scrum](https://de.wikipedia.org/wiki/Scrum) setzt als Vorgehensmodell grundsätzlich ein Team mit mehreren Personen voraus. Zentral bei Scrum ist das man es auf die eigenen Gegebenheiten und Bedürfnisse anpasst. Mit ein paar Modifikationen lässt sich Scrum also auch für eine Einzelperson verwenden und somit auch als Projektmethode für eine IPA :)
 
@@ -12,9 +12,9 @@ Die Empfehlungen können und sollen auch wo sinnvoll auf die eigene Arbeit angep
 
 Da die IPA mit 10 Tagen doch relativ kurz ausfällt, sieht man entweder nur einen einzelnen Sprint vor oder verwendet anstatt Phasen Sprints was in etwa so aussehen könnte:
 
-Sprint 1 - Initialisierung / Konzeption
-Sprint 2 - Umsetzung
-Sprint 3 - Finalisierung
+1. Sprint - Initialisierung / Konzeption
+1. Sprint - Umsetzung
+1. Sprint - Finalisierung
 
 Wie man die Arbeit in Sprints aufteilt steht dabei offen. Wichtig ist das man die Inhalte und Ziele der einzelnen Sprints beschreibt. 
 
