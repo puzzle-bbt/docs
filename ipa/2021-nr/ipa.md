@@ -34,7 +34,9 @@ tbd
 
 #### Funktionale Anforderungen
 
-* tbd
+* Jeder User hat die Möglichkeit 2FA für seinen Account zu registrieren
+* Pro Instanz kann festgelegt werden welche Rollen zwingend mit 2FA Authentifiziert werden müssen
+* 
 
 ### Individuelle Beurteilungskriterien
 
@@ -90,6 +92,6 @@ Nils arbeitet bereits seit einigen Monaten an Features von Hitobito. Ausserdem h
 * Probe IPA "Minimale Ansicht für Personen ohne Rollen" (Login/Session Thema)
 * Umsetzung diverser Features Hitobito
 * Umsetzung, Konzeption Command Line Client Cryptopus
-* Bugfixing Cryptopus
+* Bugfixing, Features Cryptopus (Ruby on Rails)
 
 ### Bemerkungen
