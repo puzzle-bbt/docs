@@ -1,4 +1,4 @@
-# Probe IPA
+# IPA
 
 ## Grobbeschrieb
 
@@ -8,7 +8,7 @@ Zwei-Faktor-Authentisierung für Hitobito
 
 ### Beschreibung
 
-tbd
+Hitobito ist eine Opensourcelösung für die Verwaltung von Mitglieder von Jungendverbänden, Parteien und anderen Organisationen. (hitobito.com, github.com/hitobito) Die Benutzerauthentifizierung von Hitobito soll mit einem zweiten Faktor erweitert werden. (Two Factor Authentication, 2FA)
 
 ## Detailbeschrieb
 
@@ -24,7 +24,7 @@ Der komplette Source-Code steht auf Github zur Verfügung: https://github.com/hi
 
 Die Basis für die Software bildet das Webframework Ruby on Rails. Für das User Interface wird neben statischer Technologie wie HTML und CSS auch JavaScript mit Ajax verwendet. 
 
-### Detailierte Aufgabenstellung
+### Detaillierte Aufgabenstellung
 
 tbd
 
@@ -68,7 +68,7 @@ Textverarbeitung und Diagramme:
 
 Projektmethode:
 
-* tbd
+* Scrum
 
 Konventionen:
 
