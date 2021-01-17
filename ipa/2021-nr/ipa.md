@@ -34,7 +34,9 @@ Mit dieser Arbeit soll Two Factor Authentication (2FA) in den Login Prozess von 
 
 * Das Software Design der Lösung soll berücksichtigen das künftig weitere 2FA Provider wie z.B. SMS Code hinzugefügt werden können
 * Es soll TOTP (Time-Based One-Time Password Algorithm) als 2FA verwendet werden: https://www.ietf.org/rfc/rfc6238.txt
-* Als App für den User soll momentan ausschliesslich freeOTP unterstützt werden. https://freeotp.github.io/
+* Als App für den User soll momentan ausschliesslich freeOTP unterstützt werden: https://freeotp.github.io/
+* Für TOTP soll ein etabliertes und aktuelles Gem (Ruby Libs) wie beispielsweise rotp verwendet werden
+* Generien von QR Codes z.B. mit dem Gem rqrcode
 
 #### Funktionale Anforderungen
 
@@ -44,11 +46,11 @@ Mit dieser Arbeit soll Two Factor Authentication (2FA) in den Login Prozess von 
 * Die Eingabe des 2FA Codes erfolgt nach erfolgreicher Prüfung von Benutzername/Passwort
 * Die Eingabe des 2FA Codes soll ebenfalls über einen Brute-Force Schutz verfügen
 * In der freeOTP App ist ersichtlich zu welcher Instanz welcher Code gehört
-* Ein Admin User hat die Möglichkeit 2FA für einen anderen Benutzer zu deaktivieren
+* Ein Admin User hat die Möglichkeit 2FA für einen anderen Benutzer zu deaktivieren falls die Rollen des Users kein 2FA erzwingen
 * 2FA kann für Personen mit definierten Rollen erzwungen werden. Die Konfiguration erfolgt dabei pro Instanz oder Wagon. (nicht im UI)
 * Ist 2FA für einen User zwingend, muss dieser 2FA nach dem Login mit Benutzer/Passwort einrichten. Solange 2FA in diesem Fall nicht eingerichtet ist, hat er keinen Zugriff auf die aktuelle Hitobito Instanz. 
 * Ein Admin User hat die Möglichkeit 2FA für einen anderen Benutzer zu resetten. Sobald sich der Benutzer nach dem Reset mit Benutzer und Passwort einloggt, muss er 2FA nochmals einrichten. Aktive Sessions des Benutzers werden beim Reset terminiert.
-* Eine Anleitung für Betreiber/Admins beschreibt wie man 2FA einrichtet und gibt eine Empfehlung ab wie man bestehende Instanzen migriert. 
+* Eine Anleitung für Betreiber/Admins beschreibt wie man 2FA einrichtet und gibt eine Empfehlung ab wie man bestehende Instanzen migriert 
 
 ### Individuelle Beurteilungskriterien
 
