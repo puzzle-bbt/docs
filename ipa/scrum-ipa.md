@@ -84,3 +84,7 @@ Für die IPA sind bereits Rollen wie Kandidat/in, Experte, usw. definiert und di
 ## Weiteres
 
 * Burn Down: Kann für das Tracking des Projekt-Fortschritts verwendet werden
+
+## Fachgespräch
+
+Während des Fachgesprächs können natürlich Fragen rund um Scrum im Allgemeinen gestellt werden. Wird Scrum als Projektmethode verwendet, ist es sinnvoll sich damit auseinander zu setzen. Das hilft nicht nur die Fragen der Experten zu beantworten, sondern Scrum auch ausserhalb der IPA richtig anzuwenden und zu adaptieren. 
