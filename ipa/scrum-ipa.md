@@ -18,7 +18,7 @@ Da die IPA mit 10 Tagen doch relativ kurz ausfällt, sieht man entweder nur eine
 
 Wie man die Arbeit in Sprints aufteilt steht dabei offen. Wichtig ist das man die Inhalte und Ziele der einzelnen Sprints beschreibt. 
 
-## Meetings
+## Scrum Meetings
 
 ### Planning
 
@@ -42,10 +42,28 @@ Eine Review/Retro am Schluss auf die ganze Arbeit gesehen darf sicher nicht fehl
 
 ## Backlogs
 
+Einer der wichtigsten Komponenten von Scrum sind sicher die Backlogs. Dieses zentrale Werkzeug sollte man auch in der IPA verwenden:
 
+Product Backlog: Zentrales Gefäss für alle noch nicht einem Sprint zugewiesenen Stories
 
-Wichtig ist hier auch die Wahl eines geeigneten Tools. 
+Sprint Backlog: Stories/Aufgaben die während einem Sprint umgesetzt werden sollen
 
-## Stories / Tasks
+Natürlich kann man auch noch weitere Backlogs erstellen:
+
+* Optionale Features
+* Bugs
+* Impediment Backlog
+
+Für die Verwaltung der Backlogs ist die Wahl eines geeigneten Tools wie z.B. Openproject oder Github Projects essenziell.
+
+## User Stories / Tasks
+
+Auch User Stories gehören zu den zentralen Komponenten von Scrum. In der Praxis zeigt sich das Tasks und Stories oft recht wild vermischt im Backlog landen. Für die IPA kann man beispielsweise die entsprechenden Backlog Elemente taggen:
+
+* User Story / Story: Als Use Cases mit konkreten Anforderungen aus Benutzersicht
+* Tasks: Aufgaben die entweder einer Story angehören oder unabhängig von Stories sind
+
+💡 Tasks und Stories können natürlich beliebig in Subtasks oder Substories aufgetrennt werden. 
 
 ## Zeitplan
+
