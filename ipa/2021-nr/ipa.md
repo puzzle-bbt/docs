@@ -30,7 +30,8 @@ tbd
 
 #### Nicht funktionale Anforderungen
 
-* tbd
+* Das Software Design der Lösung soll berücksichtigen das künftig weitere 2FA Provider wie z.B. SMS Code hinzugefügt werden können.
+
 
 #### Funktionale Anforderungen
 
