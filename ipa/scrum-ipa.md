@@ -38,7 +38,7 @@ Ausserdem eignet sich dieses Meeting auch gleich um fachliche Fragen zu klären.
 
 Da man im täglichen Arbeitsjournal bereits für sich eine Review/Retro macht, kann man dies bei den einzelnen Sprints weglassen oder im Miniformat/Zusammenfassend durchführen.
 
-Eine Review/Retro am Schluss auf die ganze Arbeit gesehen darf sicher nicht fehlen. 
+⚠️ Eine Review/Retro am Schluss auf die ganze Arbeit gesehen darf sicher nicht fehlen. 
 
 ## Backlogs
 
@@ -54,7 +54,7 @@ Natürlich kann man auch noch weitere Backlogs erstellen:
 * Bugs
 * Impediment Backlog
 
-Für die Verwaltung der Backlogs ist die Wahl eines geeigneten Tools wie z.B. Openproject oder Github Projects essenziell.
+🔧 Für die Verwaltung der Backlogs ist die Wahl eines geeigneten Tools wie z.B. Openproject oder Github Projects essenziell.
 
 ## User Stories / Tasks
 
@@ -67,3 +67,20 @@ Auch User Stories gehören zu den zentralen Komponenten von Scrum. In der Praxis
 
 ## Zeitplan
 
+Bei einer agilen Projektmethode wird der Zeitplan während der Arbeit laufend verfeinert und aktualisiert. 
+
+⚠️ Prüfe die Anforderungen an den Zeitplan im Kriterienkatalog
+
+## Story Points
+
+Der Einfachheit halber können Aufwände in Stunden geschätzt und angegeben werden. 
+
+Das Verwenden von Story Points sowie Auswertungen wie Velocity usw. sind zu aufwändig und machen fúr die kurze Dauer der IPA keinen Sinn.
+
+## Rollen
+
+Für die IPA sind bereits Rollen wie Kandidat/in, Experte, usw. definiert und die Scrum Rollen können weggelassen werden. 
+
+## Weiteres
+
+* Burn Down: Kann für das Tracking des Projekt-Fortschritts verwendet werden
