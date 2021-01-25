@@ -35,7 +35,8 @@ Mit dieser Arbeit soll Two Factor Authentication (2FA) in den Login Prozess von 
 * Als App für den User soll momentan ausschliesslich freeOTP unterstützt werden: https://freeotp.github.io/
 * Für TOTP soll ein etabliertes und aktuelles Gem (Ruby Libs) wie beispielsweise rotp verwendet werden
 * Generien von QR Codes z.B. mit dem Gem rqrcode
-* Die 2FA muss durch die Userintuitiv eingerichtet werden können.
+* Die 2FA muss durch die User intuitiv eingerichtet werden können
+* Sicherheitskriterien und entsprechende Massnahmen sind für dieses Feature definiert und umgesetzt
 
 #### Funktionale Anforderungen
 
@@ -53,12 +54,13 @@ Mit dieser Arbeit soll Two Factor Authentication (2FA) in den Login Prozess von 
 
 ### Individuelle Beurteilungskriterien
 
-* 235 - Entwurf mit UML
-* 192 - IT-Sicherheitskriterien
+* 235 - [Entwurf mit UML](https://github.com/puzzle-bbt/docs/blob/master/ipa/beurteilungskriterien.md)
+* 192 - [IT-Sicherheitskriterien](https://github.com/puzzle-bbt/docs/blob/master/ipa/beurteilungskriterien.md)
 * 166 - Lesbarer Code
 * 165 - Implementierung von Lösungen (Programmieren)
 * 124 - Testfälle (Programmierung)
-* tbd
+* 170 - Systematik der Lösungsfindung/Lösungsvorschläge
+* 194 - Plausibilisierung der Benutzer-Eingaben
 
 ### Mittel und Methoden
 Technologie und Plattform:
