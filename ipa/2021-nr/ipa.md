@@ -50,7 +50,8 @@ Mit dieser Arbeit soll Two Factor Authentication (2FA) in den Login Prozess von 
 * 2FA kann für Personen mit definierten Rollen erzwungen werden. Die Konfiguration erfolgt dabei pro Instanz oder Wagon. (nicht im UI)
 * Ist 2FA für einen User zwingend, muss dieser 2FA nach dem Login mit Benutzer/Passwort einrichten. Solange 2FA in diesem Fall nicht eingerichtet ist, hat er keinen Zugriff auf die aktuelle Hitobito Instanz. 
 * Ein Admin User hat die Möglichkeit 2FA für einen anderen Benutzer zu resetten. Sobald sich der Benutzer nach dem Reset mit Benutzer und Passwort einloggt, muss er 2FA nochmals einrichten. Aktive Sessions des Benutzers werden beim Reset terminiert.
-* Eine Anleitung für Betreiber/Admins beschreibt wie man 2FA einrichtet und gibt eine Empfehlung ab wie man bestehende Instanzen migriert 
+* Eine Anleitung für Betreiber/Admins beschreibt wie man 2FA einrichtet und gibt eine Empfehlung ab wie man bestehende Instanzen migriert
+* Wird einem Benutzer eine Rolle zugewiesen welche 2FA erzwingt, muss der User beim nächsten Login 2FA einrichten
 
 ### Individuelle Beurteilungskriterien
 
@@ -100,7 +101,7 @@ Nils arbeitet bereits seit einigen Monaten an Features von Hitobito. Ausserdem h
 
 ### Neue Lerninhalte
 
-* tbd
+Grundsätzlich wird Nils bis zur IPA mit allen Elementen des Features in Berührung gekommen sein. 
 
 ### Arbeiten in den letzten 6 Monaten
 
