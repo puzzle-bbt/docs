@@ -6,7 +6,7 @@ Hauptmotivation für das Verwenden eines agilen Modells für die IPA ist die Nä
 
 Dieses Dokument dient der/dem IPA Kandidat/-in als einfacher Leitfaden. 
 
-Die Empfehlungen können und sollen auch wo sinnvoll auf die eigene Arbeit angepasst werden. Wichtig ist in jedem Fall das Scrum als Methode erkennbar bleibt und das Vorgehen entsprechend für Aussenstehende nachvollziehbar ist. 
+Die Empfehlungen können und sollen auch wo sinnvoll auf die eigene Arbeit angepasst werden. Wichtig ist in jedem Fall das Scrum als Methode erkennbar bleibt und das Vorgehen entsprechend für Aussenstehende nachvollziehbar ist. Dazu muss der Arbeitsprozess erläutert werden. Prozesse wie beispielsweise das Backlog geführt wird sollen also beschrieben werden.
 
 ## Sprints
 
@@ -64,6 +64,10 @@ Auch User Stories gehören zu den zentralen Komponenten von Scrum. In der Praxis
 * Tasks: Aufgaben die entweder einer Story angehören oder unabhängig von Stories sind
 
 💡 Tasks und Stories können natürlich beliebig in Subtasks oder Substories aufgetrennt werden. 
+
+## Definition of Done (DoD)
+
+Ein Definition of Done hilft sicher zu stellen das sämtliche Stories komplett abgeschlossen werden. Dabei kann das DoD eine allgemeine sowie für spezifische Aufgaben wie Programmieren spezifische Checklisten enthalten.
 
 ## Zeitplan
 
