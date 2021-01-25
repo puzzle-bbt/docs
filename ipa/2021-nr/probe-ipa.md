@@ -32,7 +32,7 @@ Mit dieser Arbeit soll eine minimale Ansicht für Personen ohne Rollen realisier
 
 #### Nicht funktionale Anforderungen
 
-* Dokumentation und Umsetzung der sicherheitstechnischen Aspekte (Login, Session, Attacken)
+* Sicherheitskriterien und entsprechende Massnahmen sind für dieses Feature definiert und umgesetzt
 * Dokumentation der beteiligten Abläufe/Prozesse (Text, UML)
 
 #### Funktionale Anforderungen
@@ -51,13 +51,13 @@ Mit dieser Arbeit soll eine minimale Ansicht für Personen ohne Rollen realisier
 
 ### Individuelle Beurteilungskriterien
 
-* 235 - Entwurf mit UML
-* 192 - IT-Sicherheitskriterien
+* 235 - [Entwurf mit UML](https://github.com/puzzle-bbt/docs/blob/master/ipa/beurteilungskriterien.md)
+* 192 - [IT-Sicherheitskriterien](https://github.com/puzzle-bbt/docs/blob/master/ipa/beurteilungskriterien.md)
 * 166 - Lesbarer Code
 * 165 - Implementierung von Lösungen (Programmieren)
 * 124 - Testfälle (Programmierung)
-
-für die Probe IPA sind nur 5 anstatt 7 Kriterien vorhanden
+* 170 - Systematik der Lösungsfindung/Lösungsvorschläge
+* 194 - Plausibilisierung der Benutzer-Eingaben
 
 ### Mittel und Methoden
 Technologie und Plattform:
@@ -82,7 +82,7 @@ Textverarbeitung und Diagramme:
 
 Projektmethode:
 
-* tbd
+* Scrum
 
 Konventionen:
 
