@@ -28,13 +28,13 @@ Kein Aspekt ist gut erfüllt
 
 ## IT-Sicherheitskriterien
 
-Basierend auf Katalog-Kriterium 235
+Basierend auf Katalog-Kriterium 192
 
 ### Bezeichnung
-Visualisierungen / UML
+IT-Sicherheitskriterien
 
 ### Definition (Leitfrage)
-Die gewählten Visualisierungen sind sinnvoll gewählt und helfen die Konzepte zu verstehen
+Um einen sicheren Umgang mit Daten und/oder informationsverarbeitenden Systemen zu gewährleisten, ist es erforderlich entsprechende IT-Sicherheitskriterien und Massnahmen zu erarbeiten.
 
 ### Gütestufe 3
 Das Sicherheitskonzept ist für die jeweiligen Gefährdungslagen erstellt. Für alle erarbeiteten Sicherheitskriterien wurden ausreichende Massnahmen definiert und umgesetzt oder erwähnt für eine spätere Umsetzung.
