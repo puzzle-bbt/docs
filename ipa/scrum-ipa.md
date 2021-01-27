@@ -65,6 +65,8 @@ Auch User Stories gehören zu den zentralen Komponenten von Scrum. In der Praxis
 
 💡 Tasks und Stories können natürlich beliebig in Subtasks oder Substories aufgetrennt werden. 
 
+Definiere und verwende ebenfalls die möglichen Stati die eine Story oder Task haben kann. z.B. New, In Progress, Implemented, Resolved
+
 ## Definition of Done (DoD)
 
 Ein Definition of Done hilft sicher zu stellen das sämtliche Stories komplett abgeschlossen werden. Dabei kann das DoD eine allgemeine sowie für Aufgaben wie Programmieren spezifische Checklisten enthalten.
