@@ -67,7 +67,7 @@ Auch User Stories gehören zu den zentralen Komponenten von Scrum. In der Praxis
 
 ## Definition of Done (DoD)
 
-Ein Definition of Done hilft sicher zu stellen das sämtliche Stories komplett abgeschlossen werden. Dabei kann das DoD eine allgemeine sowie für spezifische Aufgaben wie Programmieren spezifische Checklisten enthalten.
+Ein Definition of Done hilft sicher zu stellen das sämtliche Stories komplett abgeschlossen werden. Dabei kann das DoD eine allgemeine sowie für Aufgaben wie Programmieren spezifische Checklisten enthalten.
 
 ## Zeitplan
 
@@ -83,7 +83,10 @@ Das Verwenden von Story Points sowie Auswertungen wie Velocity usw. sind zu aufw
 
 ## Rollen
 
-Für die IPA sind bereits Rollen wie Kandidat/in, Experte, usw. definiert und die Scrum Rollen können weggelassen werden. 
+* Scrum Master / Dev Team: Kandidat
+* Product Owner: Entweder der PO/PL der Software / Produkt an dem entwickelt wird oder die Verantwortliche Fachkraft
+
+💡 Nicht vergessen in der Dokumentation die Rollen ausserhalb von Scrum wie Experten, Berufsbildner usw. zu beschreiben. 
 
 ## Weiteres
 
