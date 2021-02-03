@@ -73,7 +73,7 @@ Ein Definition of Done hilft sicher zu stellen das sämtliche Stories komplett a
 
 ## Zeitplan
 
-Der Zeitplan ist ein integrale Bestandteil der IPA. Agile Methoden wie Scrum haben zu Beginn einen groben Zeitplan und können dann laufend verfeinert werden. Das kann bei der IPA genauso gemacht werden. z.B. Beim Planning (Soll Zeiten), nach jedem Arbeitstag (Ist Zeiten) aktualisieren.
+Der Zeitplan ist ein integraler Bestandteil der IPA. Agile Methoden wie Scrum haben zu Beginn einen groben Zeitplan und können dann laufend verfeinert werden. Das kann bei der IPA genauso gemacht werden. z.B. Beim Planning (Soll Zeiten), nach jedem Arbeitstag (Ist Zeiten) aktualisieren.
 
 ⚠️ Prüfe die Anforderungen an den Zeitplan im Kriterienkatalog
 
