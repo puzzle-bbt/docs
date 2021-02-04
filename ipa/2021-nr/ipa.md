@@ -99,6 +99,7 @@ Nils arbeitet bereits seit einigen Monaten an Features von Hitobito. Ausserdem h
 ### Vorarbeiten
 * Vorbereitung Dokumentvorlage
 * Grundlagen 2FA
+* PoC sowie festlegen der zu verwendenden Gems für OTP und 2FA
 
 ### Neue Lerninhalte
 
