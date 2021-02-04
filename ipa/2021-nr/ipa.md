@@ -35,7 +35,8 @@ Mit dieser Arbeit soll Two Factor Authentication (2FA) in den Login Prozess von 
 * Als App für den User soll momentan ausschliesslich freeOTP unterstützt werden: https://freeotp.github.io/
 * Für TOTP soll ein etabliertes und aktuelles Gem (Ruby Libs) wie beispielsweise rotp verwendet werden
 * Generien von QR Codes z.B. mit dem Gem rqrcode
-* Die 2FA muss durch die User intuitiv eingerichtet werden können
+* Die 2FA muss durch die User möglichst intuitiv eingerichtet werden können
+* eine einfache Benutzeranleitung erklärt wie der Benutzer 2FA einrichten kann
 * Sicherheitskriterien und entsprechende Massnahmen sind für dieses Feature definiert und wo möglich umgesetzt
 
 #### Funktionale Anforderungen
