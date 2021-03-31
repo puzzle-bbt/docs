@@ -1,4 +1,4 @@
-# Puzzle Scrum IPA 1.0 (Entwurf)
+# Puzzle Scrum IPA 1.0
 
 [Scrum](https://de.wikipedia.org/wiki/Scrum) setzt als Vorgehensmodell grundsätzlich ein Team mit mehreren Personen voraus. Zentral bei Scrum ist das man es auf die eigenen Gegebenheiten und Bedürfnisse anpasst. Mit ein paar Modifikationen lässt sich Scrum also auch für eine Einzelperson verwenden und somit auch als Projektmethode für eine IPA :)
 
@@ -38,7 +38,13 @@ Ausserdem eignet sich dieses Meeting auch gleich um fachliche Fragen zu klären.
 
 Da man im täglichen Arbeitsjournal bereits für sich eine Review/Retro macht, kann man dies bei den einzelnen Sprints weglassen oder im Miniformat/Zusammenfassend durchführen.
 
-⚠️ Eine Review/Retro am Schluss auf die ganze Arbeit gesehen darf sicher nicht fehlen. 
+⚠️ Eine Review/Retro am Schluss auf die ganze Arbeit gesehen darf sicher nicht fehlen.
+
+### Abschluss eines Sprints
+
+Nach einem Sprint kann in der Dokumentation auch ein kleiner Abschlussbericht zum Sprint selber gemacht werden. Dabei kann das Backlog, Burndown und weiteres aufgezeigt und kommentiert werden. 
+
+So kann auch innerhalb des Dokuments gezeigt werden, wie gearbeitet wurde und der Arbeitsablauf war.
 
 ## Backlogs
 
@@ -56,6 +62,10 @@ Natürlich kann man auch noch weitere Backlogs erstellen:
 
 🔧 Für die Verwaltung der Backlogs ist die Wahl eines geeigneten Tools wie z.B. Openproject oder Github Projects essenziell.
 
+### Beispiel Sprint Backlog:
+![backlog_sprint_1](https://user-images.githubusercontent.com/36076343/110619788-80bfd600-8198-11eb-8837-12507225e350.png)
+
+
 ## User Stories / Tasks
 
 Auch User Stories gehören zu den zentralen Komponenten von Scrum. In der Praxis zeigt sich das Tasks und Stories oft recht wild vermischt im Backlog landen. Für die IPA kann man beispielsweise die entsprechenden Backlog Elemente taggen:
@@ -69,7 +79,7 @@ Definiere und verwende ebenfalls die möglichen Stati die eine Story oder Task h
 
 ## Definition of Done (DoD)
 
-Ein Definition of Done hilft sicher zu stellen das sämtliche Stories komplett abgeschlossen werden. Dabei kann das DoD eine allgemeine sowie für Aufgaben wie Programmieren spezifische Checklisten enthalten.
+Ein Definition of Done hilft sicher zu stellen das sämtliche Stories komplett abgeschlossen werden. Dabei können auch verschiedene DoD für unterschiedliche Aufgabenarten definiert werden.
 
 ## Zeitplan
 
@@ -82,6 +92,8 @@ Der Zeitplan ist ein integraler Bestandteil der IPA. Agile Methoden wie Scrum ha
 Der Einfachheit halber können Aufwände in Stunden geschätzt und angegeben werden. 
 
 Das Verwenden von Story Points sowie Auswertungen wie Velocity usw. sind zu aufwändig und machen fúr die kurze Dauer der IPA keinen Sinn.
+
+In Scrum wird meist in Fibonacci Zahlen geschätzt. Dies kann auch während der IPA eingesetzt werden, wobei auch 0.5 Stunden während der IPA nützlich sind.
 
 ## Rollen
 
