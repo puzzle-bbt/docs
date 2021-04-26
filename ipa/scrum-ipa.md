@@ -87,6 +87,8 @@ Der Zeitplan ist ein integraler Bestandteil der IPA. Agile Methoden wie Scrum ha
 
 ⚠️ Prüfe die Anforderungen an den Zeitplan im Kriterienkatalog
 
+Idealerweise ladest du den Zeitplan immer nach Abschluss eines Sprints als Anhang auf Pkorg hoch. So sehen alle Beteiligten das du den Zeitplan laufend aktualisierst.
+
 ## Story Points
 
 Der Einfachheit halber können Aufwände in Stunden geschätzt und angegeben werden. 
