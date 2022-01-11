@@ -60,7 +60,8 @@ Technologie und Plattform:
 
 * Ruby, Ruby on Rails, Active Record
 * MySQL
-* HTML, ERB
+* HTML
+* JavaScript, EmberJS, Handlebars
 * Sentry
 
 Entwicklungsumgebung:
@@ -72,7 +73,7 @@ Entwicklungsumgebung:
 
 Textverarbeitung und Diagramme:
 
-* LibreOffice
+* Latex
 * draw.io
 
 Projektmethode:
