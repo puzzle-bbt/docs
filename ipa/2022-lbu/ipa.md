@@ -8,7 +8,7 @@ Cryptopus: Neuverschlüsselung der bestehenden Account/Encryptables Daten
 
 ### Beschreibung
 
-Die von Cryptopus verwalteten Zugangsdaten werden aktuell mit AES256-CBC verschlüsselt in der DB abgelegt. Um die Sicherheit der Daten zu erhöhen soll die Verschlüsselung mit einem zusätzlichen Initialization Vector (IV) erfolgen. Dazu müssen die Daten neu verschlüsselt werden was nur möglich ist während ein Benutzer eingeloggt ist.
+Die von Cryptopus verwalteten Zugangsdaten werden aktuell mit AES256-CBC verschlüsselt in der DB abgelegt. Um die Sicherheit der Daten zu erhöhen soll die Verschlüsselung mit einem zusätzlichen Initialization Vector (IV) erfolgen. Dazu müssen die Daten neu verschlüsselt werden was nur möglich ist während ein Benutzer eingeloggt ist. Die Verwendung von IV für die Verschlüsselung ist einer der Punkte die aus dem Security Audit von Cryptopus hervorgegangen sind. 
 
 ## Detailbeschrieb
 
