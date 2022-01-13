@@ -38,6 +38,7 @@ Ziel dieser Probe-IPA ist die bestehenden Datei-Einträge welche heute an Accoun
 * Dateien hängen neu an Ordnern (Folder) und nicht mehr an einem Account
 * Dateien werden bei der Migration an den Ordner angehängt an dem zuvor der verlinkte Account angehängt war
 * Die migrierten Dateien haben ein sinnvolles Label (z.B. Account Name + Dateiname)
+* Zugehörige Account welche keine Benutzernamen UND Passwort gespeichert haben, werden gelöscht
 * Dateien werden unter einem Ordner wie die Zugangsdaten/OSE Secrets aufgelistet und haben ein entsprechendes Icon
 * Dateien können maximal 10MB gross sein
 * Dateien können über das Papierkorbsymbol gelöscht werden
