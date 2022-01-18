@@ -1,4 +1,4 @@
-# Probe IPA
+# IPA
 
 ## Grobbeschrieb
 
