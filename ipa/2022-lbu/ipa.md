@@ -50,7 +50,9 @@ Die von Cryptopus verwalteten Zugangsdaten werden aktuell mit AES256-CBC verschl
 * 235 - Entwurf mit UML
 * 159 - Problemanalyse (Programmieren)
 * 166 - Lesbarer Code
+* 162 - Entwurf SW-Architektur
 * 124 - Testfälle (Programmierung)
+* 164 - Fehlerbehandlung
 * 170 - Systematik der Lösungsfindung/Lösungsvorschläge
 
 ### Mittel und Methoden
