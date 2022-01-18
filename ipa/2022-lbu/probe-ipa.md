@@ -4,7 +4,7 @@
 
 ### Titel
 
-Cryptopus: Migration FileEntry zu Encryptable/Account EncryptedData
+Cryptopus: Migration FileEntry zu Encryptable::File mit EncryptedData
 
 ### Beschreibung
 
@@ -14,7 +14,7 @@ Die aktuell in FileEntry gespeicherten und verschlüsselten Dateien sollen in di
 
 ### Titel der Arbeit
 
-Cryptopus: Migration FileEntry zu Encryptable/Account EncryptedData
+Cryptopus: Migration FileEntry zu Encryptable::File mit EncryptedData
 
 ### Ausgangslage
 
@@ -26,7 +26,7 @@ Der komplette Source-Code steht auf Github zur Verfügung: https://github.com/pu
 
 ### Detailierte Aufgabenstellung
 
-Ziel dieser Probe-IPA ist die bestehenden Datei-Einträge welche heute an Accounts hängen in die neue Datenstruktur von Encryptables zu migrieren. Ausserdem muss hier der API Endpoint sowie das UI entsprechend für die Anzeige/Auflistung der Dateien angepasst werden.
+Ziel dieser Probe-IPA ist die bestehenden Datei-Einträge welche heute an Encryptable::Credentials hängen in die neue Datenstruktur von Encryptables zu migrieren. Ausserdem muss hier der API Endpoint sowie das UI entsprechend für die Anzeige/Auflistung der Dateien angepasst werden.
 
 #### Nicht funktionale Anforderungen
 
