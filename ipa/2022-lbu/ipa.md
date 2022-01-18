@@ -4,7 +4,7 @@
 
 ### Titel
 
-Cryptopus: Neuverschlüsselung der bestehenden Encryptables Daten
+Cryptopus: Neue Datenstruktur/UI für verschlüsselte Objekte (Encryptables)
 
 ### Beschreibung
 
