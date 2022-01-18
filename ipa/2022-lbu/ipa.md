@@ -4,17 +4,17 @@
 
 ### Titel
 
-Cryptopus: Neuverschlüsselung der bestehenden Account/Encryptables Daten
+Cryptopus: Neuverschlüsselung der bestehenden Encryptables Daten
 
 ### Beschreibung
 
-Die von Cryptopus verwalteten Zugangsdaten werden aktuell mit AES256-CBC verschlüsselt in der DB abgelegt. Um die Sicherheit der Daten zu erhöhen soll die Verschlüsselung mit einem zusätzlichen Initialization Vector (IV) erfolgen. Dazu müssen die Daten neu verschlüsselt werden was nur möglich ist während ein Benutzer eingeloggt ist. Die Verwendung von IV für die Verschlüsselung ist einer der Punkte die aus dem Security Audit von Cryptopus hervorgegangen sind. 
+Die von Cryptopus verwalteten Zugangsdaten werden aktuell mit AES256-CBC verschlüsselt in der DB abgelegt. Um die Sicherheit der Daten zu erhöhen soll die Verschlüsselung mit einem zusätzlichen Initialization Vector (IV) erfolgen. Dazu müssen die Daten neu verschlüsselt werden was nur möglich ist während ein Benutzer eingeloggt ist. Die Verwendung von IV für die Verschlüsselung ist einer der Verbesserungspunkte die aus dem Security Audit von Cryptopus hervorgegangen sind. 
 
 ## Detailbeschrieb
 
 ### Titel der Arbeit
 
-Cryptopus: Neuverschlüsselung der bestehenden Account/Encryptables Daten
+Cryptopus: Neuverschlüsselung der bestehenden Encryptables Daten
 
 ### Ausgangslage
 
@@ -30,13 +30,13 @@ Der komplette Source-Code steht auf Github zur Verfügung: https://github.com/pu
 
 * Die Umsetzung erfolgt auf dem bestehenden Gesamtkonzept von Cryptopus Encryptables (https://github.com/puzzle-bbt/kon-cryptopus-encryptables)
 * Alle verschlüsselten Daten (Encryptable), welche noch nicht auf dem neuesten Stand sind, werden nach dem Login eines Benutzers neu verschlüsselt
-* Mit einem Variantenvergleich soll entschieden werden ob der Recrypt nur im Backend gemacht wird oder ob es im UI einen Dialog gibt bei dem der User den Recrypt starten kann und über den Fortschritt informiert wird
+* Mit einem Variantenvergleich soll entschieden werden ob der Recrypt nur im Backend gemacht wird oder ob es im UI einen Dialog gibt bei dem der User den Recrypt starten kann und über den Fortschritt informiert wird. Ausserdem soll definiert werden ob der Recrypt automatisch nach dem Login erfolgt oder ob der User diesen manuell startet.
 * Für die Neuverschlüsselung wird pro Team ein neues Teampasswort generiert (reset Teampassword)
 * Bestehende Openshift Secrets mit alter Datenstruktur werden ebenfalls neu verschlüsselt und mit der neuen Datenstruktur abgelegt (EncryptedData)
 * Im UI wird auf dem Team angezeigt mit welchem Algorithmus die Daten verschlüsselt sind und wie lange der verwendete Schlüssel (Teampasswort) ist
 * Die Recrypt Logik soll auch für künftige Recrypts verwendet werden können (neuere Verschlüsselungsalgorithmen)
 * Der verwendete Algorithmus bzw. die Encryption Klasse wird auf jedem Encryptable als auch auf dem Team selber gespeichert
-* Schlägt ein Recrypt eines einzelnen Ecryptable Entry fehl, werden alle Encryptables des Teams wieder auf den alten Stand zurück gesetzt (DB transaction)
+* Schlägt ein Recrypt eines einzelnen Encryptable Entry fehl, werden alle Encryptables des Teams wieder auf den alten Stand zurück gesetzt (DB transaction). In diesem Fall wird bei einem erneuten Recrypt das fehlgeschlagene Team nicht mehr neu verschlüsselt sondern behält die aktuelle Verschlüsselung. Dies soll verhindern das bei einem Recrypt Fehler Cryptopus für den User unbrauchbar wird.
 
 #### Out of Scope - wird erst nach der IPA umgesetzt
 
@@ -48,6 +48,7 @@ Der komplette Source-Code steht auf Github zur Verfügung: https://github.com/pu
 * 159 - Problemanalyse (Programmieren)
 * 166 - Lesbarer Code
 * 124 - Testfälle (Programmierung)
+* 170 - Systematik der Lösungsfindung/Lösungsvorschläge
 
 ### Mittel und Methoden
 
