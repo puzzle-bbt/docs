@@ -90,6 +90,7 @@ Luca arbeitet bereits seit einigen Monaten an Features von Cryptopus und konzipi
 
 * Vorbereitung Dokumentvorlage
 * Umsetzung Cryptopus diverser Features rund um die neuen Encryptables
+* Probe IPA Migration File Entries zu Encryptables
 
 ### Neue Lerninhalte
 
