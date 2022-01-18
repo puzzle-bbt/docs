@@ -39,6 +39,7 @@ Die von Cryptopus verwalteten Zugangsdaten werden aktuell mit AES256-CBC verschl
 * Die Recrypt Logik soll auch für künftige Recrypts verwendet werden können (neuere Verschlüsselungsalgorithmen)
 * Der verwendete Algorithmus bzw. die Encryption Klasse wird auf jedem Encryptable als auch auf dem Team selber gespeichert
 * Schlägt ein Recrypt eines einzelnen Encryptable Entry fehl, werden alle Encryptables des Teams wieder auf den alten Stand zurück gesetzt (DB transaction). In diesem Fall wird bei einem erneuten Recrypt das fehlgeschlagene Team nicht mehr neu verschlüsselt sondern behält die aktuelle Verschlüsselung. Dies soll verhindern das bei einem Recrypt Fehler Cryptopus für den User unbrauchbar wird.
+* Neue Encryptables Einträge werden mit dem auf dem Team definierten Algorithmus verschlüsselt (bei erfolgreich migrierten Teams mit dem aktuellsten Algorithmus)
 
 #### Out of Scope - wird erst nach der IPA umgesetzt
 
