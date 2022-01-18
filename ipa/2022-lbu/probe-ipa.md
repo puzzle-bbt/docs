@@ -35,10 +35,10 @@ Ziel dieser Probe-IPA ist die bestehenden Datei-Einträge welche heute an Accoun
 
 #### Funktionale Anforderungen
 
-* Dateien hängen neu an Ordnern (Folder) und nicht mehr an einem Account
-* Dateien werden bei der Migration an den Ordner angehängt an dem zuvor der verlinkte Account angehängt war
-* Die migrierten Dateien haben ein sinnvolles Label (z.B. Account Name + Dateiname)
-* Zugehörige Account welche keine Benutzernamen UND Passwort gespeichert haben, werden gelöscht
+* Dateien hängen neu an Ordnern (Folder) und nicht mehr an einem Encryptable::Credentials
+* Dateien werden bei der Migration an den Ordner angehängt an dem zuvor der verlinkte Encryptable::Credentials angehängt war
+* Die migrierten Dateien haben ein sinnvolles Label (z.B. Encryptable::Credentials Name + Dateiname), Varianten ausarbeiten, über Variantentscheid zu realisierende Lösung definieren
+* Zugehörige Encryptable::Credentials welche keine Benutzernamen UND Passwort gespeichert haben, werden gelöscht
 * Dateien werden unter einem Ordner wie die Zugangsdaten/OSE Secrets aufgelistet und haben ein entsprechendes Icon
 * Dateien können maximal 10MB gross sein
 * Dateien können über das Papierkorbsymbol gelöscht werden
@@ -47,13 +47,15 @@ Ziel dieser Probe-IPA ist die bestehenden Datei-Einträge welche heute an Accoun
 
 * Erstellen und Bearbeiten von Dateien
 * Verschieben von Dateien in einen anderen Folder/Team
+* Redirect URL bestehender API Endpoint File Entries
 
 ### Individuelle Beurteilungskriterien
 
 * 235 - Entwurf mit UML
 * 159 - Problemanalyse (Programmieren)
 * 166 - Lesbarer Code
-* 124 - Testfälle (Programmierung)
+* 124 - Testfälle (Programmierung) (ohne System Specs in Probe IPA)
+* 170 - Systematik der Lösungsfindung/Lösungsvorschläge
 
 ### Mittel und Methoden
 
