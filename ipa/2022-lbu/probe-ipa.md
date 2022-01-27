@@ -45,6 +45,7 @@ Ziel dieser Probe-IPA ist die bestehenden Datei-Einträge welche heute an Encryp
 
 #### Out of Scope - wird erst nach der Probe IPA umgesetzt
 
+* Download von Dateien
 * Erstellen und Bearbeiten von Dateien
 * Verschieben von Dateien in einen anderen Folder/Team
 * Redirect URL bestehender API Endpoint File Entries
