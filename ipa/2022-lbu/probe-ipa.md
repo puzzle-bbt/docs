@@ -55,7 +55,7 @@ Ziel dieser Probe-IPA ist die bestehenden Datei-Einträge welche heute an Encryp
 * 159 - Problemanalyse (Programmieren)
 * 166 - Lesbarer Code
 * 162 - Entwurf SW-Architektur
-* 124 - Testfälle (Programmierung) (ohne System Specs in Probe IPA)
+* 161 - Entwurf, Design (Programmierung)
 * 164 - Fehlerbehandlung
 * 170 - Systematik der Lösungsfindung/Lösungsvorschläge
 
