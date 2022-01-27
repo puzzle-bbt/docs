@@ -51,7 +51,7 @@ Die von Cryptopus verwalteten Zugangsdaten werden aktuell mit AES256-CBC verschl
 * 159 - Problemanalyse (Programmieren)
 * 166 - Lesbarer Code
 * 162 - Entwurf SW-Architektur
-* 124 - Testfälle (Programmierung)
+* 161 - Entwurf, Design (Programmierung)
 * 164 - Fehlerbehandlung
 * 170 - Systematik der Lösungsfindung/Lösungsvorschläge
 
