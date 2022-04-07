@@ -1,4 +1,4 @@
-# Puzzle Scrum IPA 1.0
+# Puzzle Scrum IPA 1.1
 
 [Scrum](https://de.wikipedia.org/wiki/Scrum) setzt als Vorgehensmodell grundsätzlich ein Team mit mehreren Personen voraus. Zentral bei Scrum ist das man es auf die eigenen Gegebenheiten und Bedürfnisse anpasst. Mit ein paar Modifikationen lässt sich Scrum also auch für eine Einzelperson verwenden und somit auch als Projektmethode für eine IPA :)
 
@@ -7,6 +7,8 @@ Hauptmotivation für das Verwenden eines agilen Modells für die IPA ist die Nä
 Dieses Dokument dient der/dem IPA Kandidat/-in als einfacher Leitfaden. 
 
 Die Empfehlungen können und sollen auch wo sinnvoll auf die eigene Arbeit angepasst werden. Wichtig ist in jedem Fall das Scrum als Methode erkennbar bleibt und das Vorgehen entsprechend für Aussenstehende nachvollziehbar ist. Dazu muss der Arbeitsprozess erläutert werden. Prozesse wie beispielsweise das Backlog geführt wird sollen also beschrieben werden.
+
+Die Projektmethode soll möglichst unkompliziert angewendet werden und dich bei der Umsetzung der IPA unterstützen.
 
 ## Sprints
 
@@ -89,6 +91,10 @@ Der Zeitplan ist ein integraler Bestandteil der IPA. Agile Methoden wie Scrum ha
 
 Idealerweise ladest du den Zeitplan immer nach Abschluss eines Sprints als Anhang auf Pkorg hoch. So sehen alle Beteiligten das du den Zeitplan laufend aktualisierst.
 
+## Burn Down
+
+Ein Burn Down kann grundsätzlich verwendet werden. Es hat sich aber gezeigt das dies in der Dokumentation in der Regel nicht sehr aussagekräftig ist. Details über den Fortschritt sieht man im Zeitplan. Überlege dir also ob für dich ein Burn Down Sinn macht oder lasse dieses Element weg. Vergiss nicht zu erwähnen das du diesen Teil von Scrum bewusst weggelassen hast.
+
 ## Story Points
 
 Der Einfachheit halber können Aufwände in Stunden geschätzt und angegeben werden. 
@@ -103,10 +109,6 @@ In Scrum wird meist in Fibonacci Zahlen geschätzt. Dies kann auch während der 
 * Product Owner: Entweder der PO/PL der Software / Produkt an dem entwickelt wird oder die Verantwortliche Fachkraft
 
 💡 Nicht vergessen in der Dokumentation die Rollen ausserhalb von Scrum wie Experten, Berufsbildner usw. zu beschreiben. 
-
-## Weiteres
-
-* Burn Down: Kann für das Tracking des Projekt-Fortschritts verwendet werden
 
 ## Fachgespräch
 
