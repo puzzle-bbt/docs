@@ -20,6 +20,8 @@ Da die IPA mit 10 Tagen doch relativ kurz ausfällt, sieht man entweder nur eine
 
 Wie man die Arbeit in Sprints aufteilt steht dabei offen. Wichtig ist das man die Inhalte und Ziele der einzelnen Sprints beschreibt. 
 
+Da in Projekten immer mehrere Sprints und Zyklen stattfinden, kann auch für die IPA mehrere Sprints vorgesehen werden. Dies ist eine praktische Kombination zwischen geplanten Phasen und agilen Sprints.
+
 ## Scrum Meetings
 
 ### Planning
