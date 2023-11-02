@@ -4,7 +4,7 @@
 
 ### Titel
 
-Hitobito: ...
+Hitobito: PoC Migration MySQL zu PostgreSQL
 
 ### Beschreibung
 
@@ -14,7 +14,7 @@ Hitobito: ...
 
 ### Titel der Arbeit
 
-Hitobito: Migration FileEntry zu Encryptable::File mit EncryptedData
+Hitobito: PoC Migration MySQL zu PostgreSQL
 
 ### Ausgangslage
 
@@ -22,9 +22,9 @@ Hitobito ist eine Open Source Webapplikation zum Verwalten von Mitgliedern, Even
 
 Die Basis für die Software bildet das Webframework Ruby on Rails. Für das User Interface wird neben statischer Technologie wie HTML und CSS auch JavaScript mit Ajax verwendet. Der komplette Source-Code steht auf Github zur Verfügung: https://github.com/hitobito
 
-### Detailierte Aufgabenstellung
+### Detaillierte Aufgabenstellung
 
-...
+Hitobito wird zurzeit ausschliesslich mit MySQL betrieben. Aus verschiedenen Gründen planen wir schon länger eine Umstellung auf **PostgreSQL** und die Verwendung von **pg_search**. Mit **pg_search** könnte auch Sphinx als eigenständiger Search-Indexer abgelöst werden.
 
 #### Nicht funktionale Anforderungen
 
@@ -54,9 +54,8 @@ Die Basis für die Software bildet das Webframework Ruby on Rails. Für das User
 Technologie und Plattform:
 
 * Ruby, Ruby on Rails, Active Record
-* MySQL
+* MySQL, PostgreSQL
 * HTML
-* JavaScript, EmberJS, Handlebars
 * Sentry
 
 Entwicklungsumgebung:
