@@ -8,7 +8,8 @@ Hitobito: PoC Migration MySQL zu PostgreSQL
 
 ### Beschreibung
 
-...
+Hitobito wird zurzeit ausschliesslich mit MySQL betrieben. Aus verschiedenen Gründen planen wir schon länger eine Umstellung auf **PostgreSQL**.
+Mit dieser Probe-IPA soll dazu ein PoC (Proof of Concept) erstellt werden welcher die Machbarkeit einer solchen Migration prüft.
 
 ## Detailbeschrieb
 
@@ -24,20 +25,43 @@ Die Basis für die Software bildet das Webframework Ruby on Rails. Für das User
 
 ### Detaillierte Aufgabenstellung
 
-Hitobito wird zurzeit ausschliesslich mit MySQL betrieben. Aus verschiedenen Gründen planen wir schon länger eine Umstellung auf **PostgreSQL** und die Verwendung von **pg_search**. Mit **pg_search** könnte auch Sphinx als eigenständiger Search-Indexer abgelöst werden.
+Hitobito wird zurzeit ausschliesslich mit MySQL betrieben. Aus verschiedenen Gründen planen wir schon länger eine Umstellung auf **PostgreSQL**.
 
-#### Nicht funktionale Anforderungen
+Mit dieser Probe-IPA soll dazu ein PoC (Proof of Concept) erstellt werden welcher die Machbarkeit einer solchen Migration prüft.
 
-* 
-* 
+Als Basis für dieses Experiment dient das [Docker Dev Setup](https://github.com/hitobito/development) von Hitobito mit dem Generic Wagon 
 
-#### Funktionale Anforderungen
+#### Phase 1 - Analyse
 
-* 
+- Was ist ActiveRecord und wie funktioniert es?
+
+Planung PoC: Setup, Anpassungen DB-Migrations, Anpassungen andere Code-Teile
+
+#### Phase 2 - Durchführung PoC
+
+Aufzeigen Anpassungen DB Migrations
+
+
+#### Phase 3 - Auswertung und Empfehlung
+
+Aufwandschätzung
+
+
+
+
+Diese Arbeit soll folgende Artifakte liefern:
+
+- Auflistung von je 3-5 Pro und Kontras im Bezug auf eine solche Umstellung
+- Eine Empfehlung ob eine solche Umstellung gemacht werden sollte oder eben nicht
+
+- Die Code-Anpassungen die für diesen PoC gemacht wurden
+
 
 #### Out of Scope - wird erst nach der Probe IPA umgesetzt
 
-* ...
+* Datenmigration bestehender Instanzen
+* Einführung von pg_search sowie Ablösung Sphinx als Indexer
+* Betriebliche Themen wie Backup usw.
 
 ### Individuelle Beurteilungskriterien
 
