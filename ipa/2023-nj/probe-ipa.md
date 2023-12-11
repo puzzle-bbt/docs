@@ -57,30 +57,17 @@ Die 5 komplexesten Änderungen in der Code Basis sollen hier detailiert beschrie
 
 Technischer Bericht wie der PoC verlief, z.B. Anzahl DB-Migrations die geändert werden konnten, Code-Teile die temporär auskommentiert werden mussten usw. Konnte die Applikation schlussendlich mit PostgreSQL betrieben werden? Laufen die specs oder braucht es dort noch Anpassungen?
 
+Eine ToDO Liste mit den noch offenen Aufgaben.
+
 #### 3 - Auswertung und Empfehlung
 
-Aufwandschätzung
+Eine Zusammenfassende Auswertung des PoC sowie eine Empfehlung ob so eine Migration gemacht werden sollte oder nicht.
 
-
-
-
-Diese Arbeit soll folgende Artifakte liefern:
-
-- Aufwandschätzung Umstellung PostgreSQL Hitobito mit Generic Wagon 
-
-- Die Code-Anpassungen die für diesen PoC gemacht wurden als Anhang
-
-
+Ausserdem eine einfach Aufwandschätzung für das fertigstellen dieser Migration sodass diese Produktions-Ready ist. (ohne sphinx, daten migration, usw)
 
 ### Individuelle Beurteilungskriterien
 
-* 235 - Entwurf mit UML
-* 159 - Problemanalyse (Programmieren)
-* 166 - Lesbarer Code
-* 162 - Entwurf SW-Architektur
-* 161 - Entwurf, Design (Programmierung)
-* 164 - Fehlerbehandlung
-* 170 - Systematik der Lösungsfindung/Lösungsvorschläge
+keine für diese Probe-IPA, nur Standard-Kritieren
 
 ### Mittel und Methoden
 
@@ -88,12 +75,10 @@ Technologie und Plattform:
 
 * Ruby, Ruby on Rails, Active Record
 * MySQL, PostgreSQL
-* HTML
-* Sentry
 
 Entwicklungsumgebung:
 
-* Rubymine
+* VS Code
 * Git, Github
 * Rake
 * Rubocop
@@ -118,11 +103,11 @@ Niklas arbeitet bereits seit einigen Monaten an Features von Hitobito. Ausserdem
 ### Vorarbeiten
 
 * Vorbereitung Dokumentvorlage
-* ...
 
 ### Neue Lerninhalte
 
-Grundsätzlich ist Niklas mit allen Komponenten die er für die Umsetzung der IPA benötigt mindestens in Berührung gekommen.
+Die Arbeit befasst sich intensiv mit dem Thema Datenbanken und es wird in diesem Bereich sicher einiges an neuen Lerninhalten geben.
+Grundsätzlich ist Niklas aber bestens vetraut mit Ruby on Rails sowie dessen DB Migrations.
 
 ### Arbeiten in den letzten 6 Monaten
 
