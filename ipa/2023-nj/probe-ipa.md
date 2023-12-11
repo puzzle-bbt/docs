@@ -29,20 +29,35 @@ Hitobito wird zurzeit ausschliesslich mit MySQL betrieben. Aus verschiedenen Gr�
 
 Mit dieser Probe-IPA soll dazu ein PoC (Proof of Concept) erstellt werden welcher die Machbarkeit einer solchen Migration prüft.
 
-Als Basis für dieses Experiment dient das [Docker Dev Setup](https://github.com/hitobito/development) von Hitobito mit dem Generic Wagon 
+Als Basis für dieses Experiment dient das [Docker Dev Setup](https://github.com/hitobito/development) von Hitobito mit dem Hitobito Core sowie dem Generic Wagon 
 
-#### Phase 1 - Analyse
+#### Out of Scope - wird erst nach der Probe IPA umgesetzt
 
-- Was ist ActiveRecord und wie funktioniert es?
+* Datenmigration bestehender Daten/Instanzen
+* Einführung von pg_search sowie Ablösung Sphinx als Indexer
+* Sphinx kann für diese Arbeit ignoriert/deaktiviert werden
+* Betriebliche Themen wie Backup usw.
 
-Planung PoC: Setup, Anpassungen DB-Migrations, Anpassungen andere Code-Teile
+#### 1 - Analyse
 
-#### Phase 2 - Durchführung PoC
+Eine kurze und knackige Analyse der Ausgangslage:
 
-Aufzeigen Anpassungen DB Migrations
+- Welche Teile der Applikation betrifft diese Umstellung?
+- Was ist Rails ActiveRecord und wie funktioniert es?
+- Rails DB-Migrations kurz vorgestellt
+- Was ist die schema.rb und was für eine Rolle spielt sie bei der Umstellung?
+- MySQL vs. PostgreSQL: die wichtigsten Unterschiede
+- Das Datenbankschema von Hitobito: Standard vs. Spezialitäten, Anzahl Tabellen, Beziehungen usw.
 
+Planung PoC: Setup, Anpassungen DB-Migrations, Anpassungen anderer Code-Teile
 
-#### Phase 3 - Auswertung und Empfehlung
+#### 2 - Durchführung PoC
+
+Die 5 komplexesten Änderungen in der Code Basis sollen hier detailiert beschrieben werden.
+
+Technischer Bericht wie der PoC verlief, z.B. Anzahl DB-Migrations die geändert werden konnten, Code-Teile die temporär auskommentiert werden mussten usw. Konnte die Applikation schlussendlich mit PostgreSQL betrieben werden? Laufen die specs oder braucht es dort noch Anpassungen?
+
+#### 3 - Auswertung und Empfehlung
 
 Aufwandschätzung
 
@@ -51,17 +66,11 @@ Aufwandschätzung
 
 Diese Arbeit soll folgende Artifakte liefern:
 
-- Auflistung von je 3-5 Pro und Kontras im Bezug auf eine solche Umstellung
-- Eine Empfehlung ob eine solche Umstellung gemacht werden sollte oder eben nicht
+- Aufwandschätzung Umstellung PostgreSQL Hitobito mit Generic Wagon 
 
-- Die Code-Anpassungen die für diesen PoC gemacht wurden
+- Die Code-Anpassungen die für diesen PoC gemacht wurden als Anhang
 
 
-#### Out of Scope - wird erst nach der Probe IPA umgesetzt
-
-* Datenmigration bestehender Instanzen
-* Einführung von pg_search sowie Ablösung Sphinx als Indexer
-* Betriebliche Themen wie Backup usw.
 
 ### Individuelle Beurteilungskriterien
 
