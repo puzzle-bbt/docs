@@ -24,6 +24,12 @@ Die Basis für die Software bildet das Webframework Ruby on Rails. Der komplette
 
 ### Detaillierte Aufgabenstellung
 
+- Fokus auf Entität Person sowie Group
+- Entitäten Event, Address, Invoice, usw. erst nach der IPA
+- Das bestehende Konzept mit den SearchStrategies kann entweder übernommen und angepasst oder gar komplett durch ein neues ersetzt werden
+- Scope der IPA ist die Implementation mit pg_search, SQL oder andere Sucharten sollen vorerst nicht mehr unterstützt werden
+- Für eine spätere Unterstützung von anderen Sucharten (z.B. SQL, Sphinx), soll der Code so aufgebaut werden das dieser zu einem späteren Zeitpunkt sinnvoll erweitert werden kann (z.B. via Base Class und Vererbung)
+- Die bestehenden Sphinx Index (indices) können entfernt werden da diese nicht mehr relevant sind. Jedoch muss sichergestellt sein das man die suchbaren Felder pro Entität konfigurieren kann. Ausserdem müssen diese Felder in Wagons ergänzt oder gar überschrieben werden können.
 
 #### Out of Scope - wird erst nach der Probe IPA umgesetzt
 
