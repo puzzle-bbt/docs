@@ -39,9 +39,8 @@ Diese IPA befasst sich mit der Einführung von Fulltext Search mit PostgreSQL in
 
 - Entitäten Event, Address, Invoice, usw.
 
-<!--### Individuelle Beurteilungskriterien-->
+### Individuelle Beurteilungskriterien
 
-<!--keine für diese Probe-IPA, nur Standard-Kritieren-->
 * Git Guidelines ?
 * Eigene Meinung vs. Aussagen mit Belegen
 
