@@ -45,6 +45,7 @@ Diese IPA befasst sich mit der Einführung von Fulltext Search mit PostgreSQL in
 
 * Git Guidelines ?
 * Eigene Meinung vs. Aussagen mit Belegen
+* Testabdeckung
 
 ### Mittel und Methoden
 
