@@ -24,20 +24,20 @@ Die Basis für die Software bildet das Webframework Ruby on Rails. Der komplette
 
 ### Detaillierte Aufgabenstellung
 
-- Fokus auf Entität Person sowie Group
-- Entitäten Event, Address, Invoice, usw. erst nach der IPA
+Diese IPA befasst sich mit der Einführung von Fulltext Search mit PostgreSQL in Hitobito:
+
+- Fokus auf Entität Person sowie Group sowie deren aktuell konfigurierten durchsuchbaren Attribute inkl. assozierte Models:
+  - https://github.com/hitobito/hitobito/blob/master/app/indices/person_index.rb
+  - https://github.com/hitobito/hitobito/blob/master/app/indices/group_index.rb
 - Das bestehende Konzept mit den SearchStrategies kann entweder übernommen und angepasst oder gar komplett durch ein neues ersetzt werden
 - Scope der IPA ist die Implementation mit pg_search, SQL oder andere Sucharten sollen vorerst nicht mehr unterstützt werden
 - Für eine spätere Unterstützung von anderen Sucharten (z.B. SQL, Sphinx), soll der Code so aufgebaut werden das dieser zu einem späteren Zeitpunkt sinnvoll erweitert werden kann (z.B. via Base Class und Vererbung)
 - Die bestehenden Sphinx Index (indices) können entfernt werden da diese nicht mehr relevant sind. Jedoch muss sichergestellt sein das man die suchbaren Felder pro Entität konfigurieren kann. Ausserdem müssen diese Felder in Wagons ergänzt oder gar überschrieben werden können.
+- Hitobito besitzt einen Core welcher mit Plugins (Wagons) erweitert wird. Für diese IPA soll der SAC/CAS Wagon verwendet werden.
 
 #### Out of Scope - wird erst nach der Probe IPA umgesetzt
 
-<!--* Datenmigration bestehender Daten/Instanzen-->
-<!--* Einführung von pg_search sowie Ablösung Sphinx als Indexer-->
-<!--* Sphinx kann für diese Arbeit ignoriert/deaktiviert werden-->
-<!--* Betriebliche Themen wie Backup usw.-->
-
+- Entitäten Event, Address, Invoice, usw.
 
 <!--### Individuelle Beurteilungskriterien-->
 
@@ -70,28 +70,34 @@ Projektmethode:
 
 Konventionen:
 
-* Backend: Es gilt der Ruby Style Guide (https://github.com/rubocop-hq/ruby-style-guide) und der Rails Style Guide (https://github.com/rubocop-hq/rails-style-guide) gemäss Rubocop Konfiguration des Projekts (https://github.com/puzzle/cryptopus/blob/master/.rubocop.yml)
+Es gilt der Ruby Style Guide (https://github.com/rubocop-hq/ruby-style-guide) und der Rails Style Guide (https://github.com/rubocop-hq/rails-style-guide) gemäss Rubocop Konfiguration des Projekts (https://github.com/hitobito/hitobito/blob/master/.rubocop.yml)
 * Git Commit Messages: https://docs.puzzle.ch/qm-guide/latest/source-code-management/index.html#_konvention_commit_message (eine Kopie im IPA Dokument ablegen da nicht öffentlich)
 
 Code der während dieser IPA entsteht soll auf ein privates Github Repo gepushed werden. Die VFs haben dabei stets Lese-Rechte
 
 ### Vorkenntnisse
 
-Niklas arbeitet bereits seit einigen Monaten an Features von Hitobito. Ausserdem hat er bereits seit dem 2. Lehrjahr Erfahrung auch in anderen Ruby on Rails Projekten gesammelt. 
+Niklas arbeitet bereits seit einigen Monaten an Features von Hitobito. Ausserdem hat er bereits seit dem 2. Lehrjahr Erfahrung auch in anderen Ruby on Rails Projekten gesammelt. In den Monaten vor der IPA hat es sich intensiv mit dem Thema PostgreSQL mit Hitobito befasst. Ausserdem hat er sich bereits mit pg_search vertraut gemacht.
 
 ### Vorarbeiten
 
 * Vorbereitung Dokumentvorlage
 * Probe-IPA: PoC MySQL zu PostgreSQL
+* Umstellung Hitobito von MySQL zu PostgreSQL (Anpassung vieler SQL Statements)
+* Umstellung Hitobito Development Docker Setup von MySQL zu PostgreSQL
 
 ### Neue Lerninhalte
 
-Bei der Erarbeitung der Probe-IPA konnte Niklas bereits einige Erfahrungen bei einer solchen Migration sammeln. Aufbauend darauf kommen jetzt neue Themen wie Datenmigration sowie Search-Indexing dazu.
-Grundsätzlich ist Niklas aber bestens vetraut mit Hitobito, Ruby on Rails sowie Rails DB Migrations.
+Bei der Erarbeitung der Probe-IPA konnte Niklas bereits einige Erfahrungen bei einer solchen Migration sammeln. Aufbauend darauf vertieft er sein Wissen mit dieser IPA rund um das Thema Fulltext search mit PostgreSQL.
+Grundsätzlich ist Niklas aber bestens vetraut mit Hitobito, Ruby on Rails sowie dessen Datenbankanbindung.
 
 ### Arbeiten in den letzten 6 Monaten
 
-* Umsetzung diverser Features für Hitobito (Ruby on Rails)
+* Umsetzung diverser Features und Bugfixes für Hitobito (Ruby on Rails)
+* Probe-IPA: PoC MySQL zu PostgreSQL
+* Umstellung Hitobito von MySQL zu PostgreSQL (Anpassung vieler SQL Statements)
+* Umstellung Hitobito Development Docker Setup von MySQL zu PostgreSQL
+* Bootstrap 5.3 Upgrade Hitobito
 
 ### Bemerkungen
 
