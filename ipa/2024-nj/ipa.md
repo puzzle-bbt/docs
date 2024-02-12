@@ -26,15 +26,16 @@ Die Basis für die Software bildet das Webframework Ruby on Rails. Der komplette
 
 Diese IPA befasst sich mit der Einführung von Fulltext Search mit PostgreSQL in Hitobito:
 
-- Fokus auf Entität Person sowie Group sowie deren aktuell konfigurierten durchsuchbaren Attribute inkl. assozierte Models:
+- Fokus auf Entität Person und Group sowie deren aktuell konfigurierten durchsuchbaren Attribute inkl. assozierte Models:
   - https://github.com/hitobito/hitobito/blob/master/app/indices/person_index.rb
   - https://github.com/hitobito/hitobito/blob/master/app/indices/group_index.rb
 - Das bestehende Konzept mit den SearchStrategies kann entweder übernommen und angepasst oder gar komplett durch ein neues ersetzt werden
 - Scope der IPA ist die Implementation mit pg_search, SQL oder andere Sucharten sollen vorerst nicht mehr unterstützt werden
-- Für eine spätere Unterstützung von anderen Sucharten (z.B. SQL, Sphinx), soll der Code so aufgebaut werden das dieser zu einem späteren Zeitpunkt sinnvoll erweitert werden kann (z.B. via Base Class und Vererbung)
-- Die bestehenden Sphinx Index (indices) können entfernt werden da diese nicht mehr relevant sind. Jedoch muss sichergestellt sein das man die suchbaren Felder pro Entität konfigurieren kann. Ausserdem müssen diese Felder in Wagons ergänzt oder gar überschrieben werden können.
-- Hitobito besitzt einen Core welcher mit Plugins (Wagons) erweitert wird. Für diese IPA soll der SAC/CAS Wagon verwendet werden.
-- Der Fokus der IPA liegt darin die Suche mal primär zu ermöglichen. Unterschiede zu der aktuellen Implementation mit Sphinx sollen im Bericht erwähnt werden. z.B. Infix vs. Prefix Suche
+- Für eine spätere Unterstützung von anderen Sucharten (z.B. via SQL oder Sphinx), soll der Code so aufgebaut werden das dieser zu einem späteren Zeitpunkt sinnvoll erweitert werden kann (z.B. via Base Class und Vererbung)
+- Hitobito besitzt einen Core welcher mit Plugins (Wagons) erweitert wird. Für diese IPA soll der SAC/CAS Wagon inkl. Youth Wagon verwendet werden.
+- Suchbare Felder sollen pro Entität konfiguriert werden können. Ausserdem müssen diese Felder in Wagons ergänzt oder gar überschrieben werden können.
+- Die bestehenden Sphinx Indizes (indices) können für die IPA ignoriert werden.
+- Der Fokus der IPA liegt darin die Suche mal primär zu ermöglichen. Detailunterschiede zu der aktuellen Implementation mit Sphinx sollen im Bericht erwähnt werden, falls es sich als zu aufwändig herausstellt, diese innerhalb der IPA oder gar unmöglich ist, diese mit pg_search generell umzusetzen.  (z.B. Infix vs. Prefix Suche)
 
 #### Out of Scope - wird erst nach der Probe IPA umgesetzt
 
