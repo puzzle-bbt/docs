@@ -34,7 +34,7 @@ Diese IPA befasst sich mit der Einführung von Fulltext Search mit PostgreSQL in
 - Für eine spätere Unterstützung von anderen Sucharten (z.B. via SQL oder Sphinx), soll der Code so aufgebaut werden das dieser zu einem späteren Zeitpunkt sinnvoll erweitert werden kann (z.B. via Base Class und Vererbung)
 - Hitobito besitzt einen Core welcher mit Plugins (Wagons) erweitert wird. Für diese IPA soll der SAC/CAS Wagon inkl. Youth Wagon verwendet werden.
 - Suchbare Felder sollen pro Entität konfiguriert werden können. Ausserdem müssen diese Felder in Wagons ergänzt oder gar überschrieben werden können.
-- Die bestehenden Sphinx Indizes (indices) können für die IPA ignoriert werden.
+- Die bestehenden Sphinx Indizes (indices) können für die IPA ignoriert werden und bleiben einfach vorerst im Repo bestehen. 
 - Der Fokus der IPA liegt darin die Suche mal primär zu ermöglichen. Detailunterschiede zu der aktuellen Implementation mit Sphinx sollen im Bericht erwähnt werden, falls es sich als zu aufwändig herausstellt, diese innerhalb der IPA oder gar unmöglich ist, diese mit pg_search generell umzusetzen.  (z.B. Infix vs. Prefix Suche)
 
 #### Out of Scope - wird erst nach der Probe IPA umgesetzt
