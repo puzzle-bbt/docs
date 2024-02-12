@@ -1,4 +1,4 @@
-# Probe IPA
+# IPA
 
 ## Grobbeschrieb
 
@@ -37,7 +37,7 @@ Diese IPA befasst sich mit der Einführung von Fulltext Search mit PostgreSQL in
 - Die bestehenden Sphinx Indizes (indices) können für die IPA ignoriert werden und bleiben einfach vorerst im Repo bestehen. 
 - Der Fokus der IPA liegt darin die Suche mal primär zu ermöglichen. Detailunterschiede zu der aktuellen Implementation mit Sphinx sollen im Bericht erwähnt werden, falls es sich als zu aufwändig herausstellt, diese innerhalb der IPA oder gar unmöglich ist, diese mit pg_search generell umzusetzen.  (z.B. Infix vs. Prefix Suche)
 
-#### Out of Scope - wird erst nach der Probe IPA umgesetzt
+#### Out of Scope - wird erst nach der IPA umgesetzt
 
 - Entitäten Event, Address, Invoice, usw.
 
