@@ -8,8 +8,8 @@ Hitobito: Einführung von PostgreSQL Fulltext Search
 
 ### Beschreibung
 
-Hitobito wird zurzeit ausschliesslich mit MySQL betrieben. Aus verschiedenen Gründen planen wir schon länger eine Umstellung auf **PostgreSQL**.
-Zusammen mit dieser Umstellung soll ebenfalls die Suche mit dem Fulltext Search feature von PostgreSQL möglich sein. Damit wäre dann auch Sphinx als Search-Indexer obsolet was das gesamte Deployment bzw. das Setup der Produktionsumgebungen vereinfachen würde.
+Hitobito wird zurzeit ausschliesslich mit der Datenbank Engine **MySQL** betrieben. Für die Volltextsuche wird die Suchengine **Sphinx** eingesetzt. Aus verschiedenen Gründen planen wir schon länger eine Umstellung auf **PostgreSQL**.
+Zusammen mit dieser Umstellung soll ebenfalls die Suche mit dem Fulltext Search feature von PostgreSQL möglich sein. Damit erübrigt sich der Einsatz einer separaten Search Engine was das gesamte Deployment bzw. das Setup der Produktionsumgebungen vereinfacht.
 
 ## Detailbeschrieb
 
@@ -32,6 +32,9 @@ Diese IPA befasst sich mit der Einführung von Fulltext Search mit PostgreSQL in
 - Das bestehende Konzept mit den SearchStrategies kann entweder übernommen und angepasst oder gar komplett durch ein neues ersetzt werden
 - Scope der IPA ist die Implementation mit pg_search, SQL oder andere Sucharten sollen vorerst nicht mehr unterstützt werden
 - Für eine spätere Unterstützung von anderen Sucharten (z.B. via SQL oder Sphinx), soll der Code so aufgebaut werden das dieser zu einem späteren Zeitpunkt sinnvoll erweitert werden kann (z.B. via Base Class und Vererbung)
+  * wir gehen davon aus, dass in Zukunft nur noch postgres verwendet wird, right?
+  * Die indexierten Felder werden mit **pg_search** direkt auf dem Model mit einer DSL definiert. Falls es weiterhin die Möglichkeit geben soll, eine andere Suchstrategie zu konfigurieren, dann sollte auch die ganze **pg_search** Konfiguration nicht geladen werden (vielleicht über Module welche beim Setup der Suchstrategie in den models inkludiert werden?)
+  * Ich frage mich, ob es sinnvoll ist, den Mehraufwand zu betreiben um mehrere Suchstrategien zu unterstützen. Wenn die features von postgres fulltext search ausreichen, dann würde ich es so einfach wie möglich halten und weitere Optionen gar nicht vorbereiten.
 - Hitobito besitzt einen Core welcher mit Plugins (Wagons) erweitert wird. Für diese IPA soll der SAC/CAS Wagon inkl. Youth Wagon verwendet werden.
 - Suchbare Felder sollen pro Entität konfiguriert werden können. Ausserdem müssen diese Felder in Wagons ergänzt oder gar überschrieben werden können.
 - Die bestehenden Sphinx Indizes (indices) können für die IPA ignoriert werden und bleiben einfach vorerst im Repo bestehen. 
@@ -43,7 +46,7 @@ Diese IPA befasst sich mit der Einführung von Fulltext Search mit PostgreSQL in
 
 ### Individuelle Beurteilungskriterien
 
-* Git Guidelines ?
+* Git Guidelines ? (was ist gemeint, best practices @Puzzle?)
 * Eigene Meinung vs. Aussagen mit Belegen
 * Testabdeckung
 
@@ -52,7 +55,7 @@ Diese IPA befasst sich mit der Einführung von Fulltext Search mit PostgreSQL in
 Technologie und Plattform:
 
 * Ruby, Ruby on Rails, Active Record
-* MySQL, PostgreSQL
+* PostgreSQL, gem **pg_search**
 
 Entwicklungsumgebung:
 
