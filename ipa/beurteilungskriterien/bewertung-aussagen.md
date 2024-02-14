@@ -1,9 +1,5 @@
 ## Bewertung von Aussagen
 
-### Bezeichnung
-
-Bewertung von Aussagen
-
 ### Definition (Leitfrage)
 
 Es wird bewertet, ob die Aussagen in der Arbeit klar zwischen persönlichen Meinungen und auf Quellen basierenden Informationen unterscheiden.

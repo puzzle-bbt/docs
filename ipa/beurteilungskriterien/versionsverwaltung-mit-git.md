@@ -1,8 +1,4 @@
-## Versionsverwaltung mit Git
-
-### Bezeichnung
-
-Versionsverwaltung mit Git
+## Versionsverwaltung mit Git (Source Code)
 
 ### Definition (Leitfrage)
 
