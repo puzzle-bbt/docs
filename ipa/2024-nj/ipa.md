@@ -8,8 +8,8 @@ Hitobito: Einführung von PostgreSQL Fulltext Search
 
 ### Beschreibung
 
-Hitobito wird zurzeit ausschliesslich mit MySQL betrieben. Aus verschiedenen Gründen planen wir schon länger eine Umstellung auf **PostgreSQL**.
-Zusammen mit dieser Umstellung soll ebenfalls die Suche mit dem Fulltext Search feature von PostgreSQL möglich sein. Damit wäre dann auch Sphinx als Search-Indexer obsolet was das gesamte Deployment bzw. das Setup der Produktionsumgebungen vereinfachen würde.
+Hitobito wird zurzeit ausschliesslich mit der Datenbank Engine MySQL betrieben. Für die Volltextsuche wird die Suchengine Sphinx eingesetzt. Aus verschiedenen Gründen planen wir schon länger eine Umstellung auf PostgreSQL.
+Zusammen mit dieser Umstellung soll ebenfalls die Suche mit dem Fulltext Search feature von PostgreSQL möglich sein. Damit erübrigt sich der Einsatz einer separaten Search Engine was das gesamte Deployment bzw. das Setup der Produktionsumgebungen vereinfacht.
 
 ## Detailbeschrieb
 
@@ -21,6 +21,7 @@ Hitobito: Einführung von PostgreSQL Fulltext Search
 
 Hitobito ist eine Open Source Webapplikation zum Verwalten von Mitgliedern, Events und vielem mehr. Die Ruby on Rails Applikation wurde 2012 von Puzzle ITC initiiert und wird stets weiterentwickelt. 
 Die Basis für die Software bildet das Webframework Ruby on Rails. Der komplette Source-Code steht auf Github zur Verfügung: https://github.com/hitobito
+Als Vorarbeit hat Niklas bereits den grössten Teil des Applikationscodes von MySQL nach PostgreSQL migriert. 
 
 ### Detaillierte Aufgabenstellung
 
@@ -30,16 +31,22 @@ Diese IPA befasst sich mit der Einführung von Fulltext Search mit PostgreSQL in
   - https://github.com/hitobito/hitobito/blob/master/app/indices/person_index.rb
   - https://github.com/hitobito/hitobito/blob/master/app/indices/group_index.rb
 - Das bestehende Konzept mit den SearchStrategies kann entweder übernommen und angepasst oder gar komplett durch ein neues ersetzt werden
-- Scope der IPA ist die Implementation mit pg_search, SQL oder andere Sucharten sollen vorerst nicht mehr unterstützt werden
-- Für eine spätere Unterstützung von anderen Sucharten (z.B. via SQL oder Sphinx), soll der Code so aufgebaut werden das dieser zu einem späteren Zeitpunkt sinnvoll erweitert werden kann (z.B. via Base Class und Vererbung)
+- Neue DSL (domain specific language) um zu definieren welche Attribute auf welchem Model searchable sind
+- Scope der IPA ist die Implementation mit pg_search, SQL oder andere Search Engines sollen vorerst nicht mehr unterstützt werden
+- Für eine spätere Unterstützung von anderen Volltextsuchen (z.B. via SQL oder Sphinx), soll der Code so aufgebaut werden das dieser zu einem späteren Zeitpunkt sinnvoll erweitert werden kann (z.B. via Base Class und Vererbung)
 - Hitobito besitzt einen Core welcher mit Plugins (Wagons) erweitert wird. Für diese IPA soll der SAC/CAS Wagon inkl. Youth Wagon verwendet werden.
 - Suchbare Felder sollen pro Entität konfiguriert werden können. Ausserdem müssen diese Felder in Wagons ergänzt oder gar überschrieben werden können.
-- Die bestehenden Sphinx Indizes (indices) können für die IPA ignoriert werden und bleiben einfach vorerst im Repo bestehen. 
+- Die bestehenden Sphinx Indizes (indices) können für die IPA ignoriert oder auch entfernt/ersetzt werden.
 - Der Fokus der IPA liegt darin die Suche mal primär zu ermöglichen. Detailunterschiede zu der aktuellen Implementation mit Sphinx sollen im Bericht erwähnt werden, falls es sich als zu aufwändig herausstellt, diese innerhalb der IPA oder gar unmöglich ist, diese mit pg_search generell umzusetzen.  (z.B. Infix vs. Prefix Suche)
+- Heute unterstützt Hitobito nur MySQL, künftig soll nur noch PostgreSQL unterstützt werden. Es muss also auch bei der Konzeption keine andere DB-Engine berücksichtigt werden.
+- Eine Entwickler-Anleitung beschreibt wie man die Volltextsuche für einzelne Models konfiguriert und diese in einem Wagon erweitert/anpasst.
+- Eine technische Dokumentation des neuen Fulltext Features (Architektur, Klassen, verwendetes Gem, usw) geht auf die wichtigsten Details ein. 
+- Dokumentation im Core Repo unter /doc/modules/tech/fulltext_search.md
+- Das Fazit der Arbeit gibt Empfehlungen über das weitere Vorgehen im Bezug auf die Fertigstellung/produktions-ready machen dieser Fulltext Search
 
 #### Out of Scope - wird erst nach der IPA umgesetzt
 
-- Entitäten Event, Address, Invoice, usw.
+- Fulltext Search für Entitäten Event, Address, Invoice, usw.
 
 ### Individuelle Beurteilungskriterien
 
