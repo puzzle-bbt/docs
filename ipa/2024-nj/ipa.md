@@ -8,8 +8,8 @@ Hitobito: Einführung von PostgreSQL Fulltext Search
 
 ### Beschreibung
 
-Hitobito wird zurzeit ausschliesslich mit der Datenbank Engine MySQL betrieben. Für die Volltextsuche wird die Suchengine Sphinx eingesetzt. Aus verschiedenen Gründen planen wir schon länger eine Umstellung auf PostgreSQL.
 Zusammen mit dieser Umstellung soll ebenfalls die Suche mit dem Fulltext Search feature von PostgreSQL möglich sein. Damit erübrigt sich der Einsatz einer separaten Search Engine was das gesamte Deployment bzw. das Setup der Produktionsumgebungen vereinfacht.
+Hitobito wird zurzeit ausschliesslich mit MySQL betrieben. Aus verschiedenen Gründen planen wir schon länger eine Umstellung auf PostgreSQL. Zusammen mit dieser Umstellung soll ebenfalls die Suche mit dem Fulltext Search feature von PostgreSQL möglich sein. Damit wäre dann auch Sphinx als Search-Indexer obsolet was das gesamte Deployment bzw. das Setup der Produktionsumgebungen vereinfachen würde.
 
 ## Detailbeschrieb
 
@@ -20,8 +20,7 @@ Hitobito: Einführung von PostgreSQL Fulltext Search
 ### Ausgangslage
 
 Hitobito ist eine Open Source Webapplikation zum Verwalten von Mitgliedern, Events und vielem mehr. Die Ruby on Rails Applikation wurde 2012 von Puzzle ITC initiiert und wird stets weiterentwickelt. 
-Die Basis für die Software bildet das Webframework Ruby on Rails. Der komplette Source-Code steht auf Github zur Verfügung: https://github.com/hitobito
-Als Vorarbeit hat Niklas bereits den grössten Teil des Applikationscodes von MySQL nach PostgreSQL migriert. 
+Die Basis für die Software bildet das Webframework Ruby on Rails. Der komplette Source-Code steht auf Github zur Verfügung: https://github.com/hitobito. Hitobito wird zurzeit ausschliesslich mit MySQL betrieben. Aus verschiedenen Gründen planen wir schon länger eine Umstellung auf PostgreSQL. Als Vorarbeit hat Niklas bereits den grössten Teil des Applikationscodes von MySQL nach PostgreSQL migriert. 
 
 ### Detaillierte Aufgabenstellung
 
@@ -31,7 +30,7 @@ Diese IPA befasst sich mit der Einführung von Fulltext Search mit PostgreSQL in
   - https://github.com/hitobito/hitobito/blob/master/app/indices/person_index.rb
   - https://github.com/hitobito/hitobito/blob/master/app/indices/group_index.rb
 - Das bestehende Konzept mit den SearchStrategies kann entweder übernommen und angepasst oder gar komplett durch ein neues ersetzt werden
-- Neue DSL (domain specific language) um zu definieren welche Attribute auf welchem Model searchable sind
+- Neue Konfigurationsmöglichkeit um zu definieren welche Attribute auf welchem Model searchable sind
 - Scope der IPA ist die Implementation mit pg_search, SQL oder andere Search Engines sollen vorerst nicht mehr unterstützt werden
 - Für eine spätere Unterstützung von anderen Volltextsuchen (z.B. via SQL oder Sphinx), soll der Code so aufgebaut werden das dieser zu einem späteren Zeitpunkt sinnvoll erweitert werden kann (z.B. via Base Class und Vererbung)
 - Hitobito besitzt einen Core welcher mit Plugins (Wagons) erweitert wird. Für diese IPA soll der SAC/CAS Wagon inkl. Youth Wagon verwendet werden.
@@ -47,12 +46,19 @@ Diese IPA befasst sich mit der Einführung von Fulltext Search mit PostgreSQL in
 #### Out of Scope - wird erst nach der IPA umgesetzt
 
 - Fulltext Search für Entitäten Event, Address, Invoice, usw.
+- Effektive Ablösung Sphinx-Setup
+- Migration des bestehenden DB-Daten von MySQL nach PostgreSQL
+- Fulltext Search Performance Analyse und Optimierungen
 
 ### Individuelle Beurteilungskriterien
 
-* Git Guidelines ?
-* Eigene Meinung vs. Aussagen mit Belegen
-* Testabdeckung
+1 Entwurf, Design (Programmierung)
+2 Dokumentation Datenbanken, Tabellen, etc.
+3 Visualisierungen / UML
+4 Bewertung von Aussagen
+5 Problemanalyse (Programmieren)
+6 Automatisierte Tests mit rspec
+7 Versionsverwaltung mit Git (Source Code) 
 
 ### Mittel und Methoden
 
