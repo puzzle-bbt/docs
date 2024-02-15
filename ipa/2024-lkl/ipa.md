@@ -52,7 +52,7 @@ Die für diese Arbeit benötigten Entitäten und ihre Beziehungen:
 * Ein KeyResultAlignment verlinkt ein Objective zu einem KeyResult.
 
 Die aktuelle Übersicht listet die KeyResults gruppiert in Teams und Objectives auf.
-Es existiert ein Filter, welche die Daten nach Quartal, Teams und einer Titel-Suche filtert.
+Es existiert ein Filter, welche die Daten nach Quartal, Teams und einer Objective-Titel-Suche filtert.
 Es werden nur Daten angezeigt, welche zum gleichen Quartal gehören.
 
 ### Detaillierte Aufgabenstellung
@@ -79,41 +79,37 @@ Umschalten:
 Visualisieren:
 
 * Für die Visualisierung wird die OpenSource JavaScript Library Cytoscape.js eingesetzt.
-* Ein Objective enthält folgende Informationen:
+* Folgende Daten werden bei der Visualisierung angezeigt:
+  1. Alle Objectives anhand des eingestellten Filters
+  2. Optional alle KeyResults anhand des eingestellten Filters
+  3. Alle Objectives und KeyResults, auf welche die Objectives aus Punkt 1 verweisen (Alignment)
+  4. Optional alle Objectives, zu welchen die KeyResults aus Punk 3 gehören
+* Die Darstellung eines Objective enthält folgende Informationen:
   * Titel
   * Team
   * Status (Icon)
-* Ein KeyResult enthält folgende Informationen:
+* Die Darstellung eines KeyResult enthält folgende Informationen:
   * Titel
   * Team
-  * Status (Icon)
-* Optisch sollen sich die beiden Verbindungsarten (Alignment, Zugehörigkeit) unterscheiden.
+  * Status (Hintergrundfarbe)
+* Optisch wird die Visualisierung nach den Vorgaben des PO und UX vom OKR-Tools umgesetzt.
+* Ein Klick auf ein Objective oder KeyResult öffnet die bestehende Detailansicht der Objectives und KeyResults.
 
 **Beschaffung und Bereitstellung der Daten für die Visualisierung**
 
 * Die bestehende REST-Schnittstelle wird um einen Endpunkt erweitert, welches die Daten zur Visualisierung bereitstellt.
 * Diese Daten müssen aus der Datenbank gelesen und im Backend aufbereitet werden.
-* Das Frontend sollte mit einem oder wenigen Aufrufe auf die REST-Schnittstelle alle benötigten Daten zur Visualisierung erhalten.
-
----
-Die Daten bestehen aus Teilen der Entitäten Teams, Objectives und KeyResults und weisen folgende Verbindungen auf:
-
-* Ein Objective kann entweder mit einem KeyResult oder mit einem anderen Objective verlinken werden (Alignment).
-* Die Verlinkungen sind nur innerhalb des gleichen Quartals zulässig.
-* Diese Verlinkung ist optional.
-
-* Visuellen Vorgaben von UX.
-* Funktionale Vorgaben vom PO des Projektes.
----
+* Das Frontend sollte mit einem oder wenigen Aufrufe der REST-Schnittstelle alle benötigten Daten zur Visualisierung erhalten.
 
 #### Nicht funktionale Anforderungen
-* Alle Codeänderungen sind mit UnitTest und im Frontend mit E2E-Tests getestet.
+* Alle Codeänderungen sind mit Unit- und Integrations-Tests.
+* Änderungen am Frontend sind mit sinnvollen E2E-Tests getestet.
 * Code-Formatierung wird durch die im Projekt enthaltenen Formatierer sichergestellt.
-* Code-Convention von Puzzle werden eingehalten.
 
 #### Out of Scope - wird erst nach der IPA umgesetzt
 
-* Autovervollständigung der DropDown-Liste in der Erstellen / Bearbeiten Maske eines Objective
+* Erfassen und Anzeigen der Alignment Verbindungen in den bestehenden Formularen und Ansichten.
+* Sicherstellen, dass die Visualisierung auch auf dem Smartphone funktioniert.
 
 ### Individuelle Beurteilungskriterien
 
@@ -133,18 +129,19 @@ Technologie und Plattform:
 * Java, Spring Boot, Hibernate, Flyway, Swagger
 * PostgreSQL
 * Jest, Cypress
+* Visualisierung: Cytoscape.js
 
 Entwicklungsumgebung:
 
 * IntelliJ IDEA
 * Git, Github
 * NPM, Maven
-* Sonar?, Linter?
+* Linter
 
 Textverarbeitung und Diagramme:
 
 * Latex
-* draw.io / PlantUML / 
+* draw.io / PlantUML / Mermaid
 
 Projektmethode:
 
@@ -154,6 +151,7 @@ Konventionen:
 
 * Backend: Puzzle / Projekt Konvention
 * Frontend: Puzzle / Projekt Konvention
+* Git Commit Messages: https://docs.puzzle.ch/qm-guide/latest/source-code-management/index.html#_konvention_commit_message (eine Kopie im IPA Dokument ablegen da nicht öffentlich)
 
 ### Vorkenntnisse
 
