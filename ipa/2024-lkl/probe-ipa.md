@@ -68,7 +68,7 @@ keine für diese Probe-IPA, nur Standard-Kriterien
 Technologie und Plattform:
 
 * Angular, TypeScript, HTML, SCSS
-* Java, SpringBoot, Hibernate, Flyway, Swagger
+* Java, Spring Boot, Hibernate, Flyway, Swagger
 * PostgreSQL
 * Jest, Cypress
 
