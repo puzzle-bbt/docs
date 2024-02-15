@@ -9,10 +9,10 @@ Eine gute Testabdeckung ist essenziell für zuverlässige Features und eine gute
 3. Der Projektstandard wird bei den Tests eingehalten
 
 ### Gütestufe 2
-Ein Aspekt ist gut erfüllt
+Zwei Aspekte sind gut erfüllt
 
 ### Gütestufe 1
-Zwei Aspekte sind gut erfüllt
+Ein Aspekt ist gut erfüllt
 
 ### Gütestufe 0
 Kein Aspekt ist gut erfüllt
