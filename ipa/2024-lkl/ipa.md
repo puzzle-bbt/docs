@@ -37,7 +37,7 @@ OKR-Tool: Visualisierung der Objectives und KeyResults
 
 Das Puzzle OKR-Tool wurde von den Lernenden im zweiten Halbjahr 2023 umgesetzt und dient zum Verwalten von Objectives und KeyResults. Seit Mitte Dezember ist dieses Tool bei Puzzle ITC im produktiven Einsatz.
 Als nächste Erweiterung möchte man das Tool um eine weitere Ansicht ergänzen:
-Die Verbindungen zwischen den Objectives und KeyResults sollen visuell in einem Diagramm darstellen werden.
+Die Alignment-Verbindungen zwischen den Objectives und KeyResults sollen visuell in einem Diagramm darstellen werden.
 
 Das OKR-Tool besteht aus einem Spring Boot Backend, einer PostgreSQL DB, sowie einem Angular Frontend, welches die Daten über eine RESTful-Schnittstelle vom Backend bezieht.
 
@@ -52,7 +52,7 @@ Die für diese Arbeit benötigten Entitäten und ihre Beziehungen:
 * Ein KeyResultAlignment verlinkt ein Objective zu einem KeyResult.
 
 Die aktuelle Übersicht listet die KeyResults gruppiert in Teams und Objectives auf.
-Es existiert ein Filter, welche die Daten nach Quartal, Teams und einer Objective-Titel-Suche filtert.
+Es existiert ein Filter, welcher die Daten nach Quartal, Teams und einer Objective-Titel-Suche filtert.
 Es werden nur Daten angezeigt, welche zum gleichen Quartal gehören.
 
 ### Detaillierte Aufgabenstellung
@@ -70,7 +70,7 @@ Umschalten:
 
 * Beim Aufruf des OKR-Tools wird die aktuelle Übersicht angezeigt.
 * Ein neuer Umschalter unterhalb des Headers erlaubt es, zwischen der aktuellen Übersicht und der neuen Visualisierung umzuschalten.
-* Es wird immer nur eine Darstellung (aktuelle Übersicht oder Visualisierung) der Daten angezeigt.
+* Es wird immer nur eine Darstellung (existierende Übersicht oder neue Visualisierung) der Daten angezeigt.
 * Der Header insbesondere der Filter im Header bleibt beim Umschalten unverändert.
 * Der Filter wirkt sich auf beiden Darstellungen aus.
 * Ändert der Benutzer den Filter, aktualisiert sich die momentane Darstellung.
@@ -93,29 +93,35 @@ Visualisieren:
   * Team
   * Status (Hintergrundfarbe)
 * Optisch wird die Visualisierung nach den Vorgaben des PO und UX vom OKR-Tools umgesetzt.
-* Ein Klick auf ein Objective oder KeyResult öffnet die bestehende Detailansicht der Objectives und KeyResults.
+* Beim der Library Cytoscape.js lässt sich der Inhalt (Text) in einem Node nicht formatieren. Als Lösung wird der Inhalt jedes einzelnen Nodes in einem SVG-Bild generiert und als Hintergrund des Node gesetzt.
+* Ein Klick auf ein Objective oder KeyResult öffnet die bestehende Detailansicht des Objectives oder KeyResults.* Ein Editieren eines Objective oder eines KeyResult löst ein neues Rendern der Visualisierung aus. Die Skalierung sowie Positionierung wird dabei von der Library wieder neu berechnet und kann sich ändern.
 
 **Beschaffung und Bereitstellung der Daten für die Visualisierung**
 
-* Die bestehende REST-Schnittstelle wird um einen Endpunkt erweitert, welches die Daten zur Visualisierung bereitstellt.
+* Die bestehende REST-Schnittstelle wird um einen Endpunkt erweitert, welcher die Daten zur Visualisierung bereitstellt.
 * Diese Daten müssen aus der Datenbank gelesen und im Backend aufbereitet werden.
 * Das Frontend sollte mit einem oder wenigen Aufrufe der REST-Schnittstelle alle benötigten Daten zur Visualisierung erhalten.
 
 #### Nicht funktionale Anforderungen
-* Alle Codeänderungen sind mit Unit- und Integrations-Tests.
+* Alle Codeänderungen sind mit Unit- und Integrations-Tests getestet.
 * Änderungen am Frontend sind mit sinnvollen E2E-Tests getestet.
 * Code-Formatierung wird durch die im Projekt enthaltenen Formatierer sichergestellt.
+* Der Programm-Code wird regelmässig und in logischen Einheiten in das GIT-Repository des Projekts in einem separaten Branch eingecheckt und gepusht.
+* Die Dokumentation wird regelmässig und in logischen Einheiten in ein eigenes GIT-Repository eingecheckt und gepusht.
+* Die REST-Schnittstelle zwischen Frontend und Backend wird mit dem im Projekt vorhandenen Swagger UI dokumentiert
 
 #### Out of Scope - wird erst nach der IPA umgesetzt
-
+* Die Anordnung des Diagrams wird von der Library Cytoscape.js eigenständig durchgeführt und wird in der IPA nicht angepasst.
+* Wörter im Diagram, welche auf einer Zeile keinen Platz finden, sollten umgebrochen werden.
+* Die neue Visualisierung erhält eine Legende. 
+* Die Visualisierung soll auch auf dem Smartphone funktionieren.
 * Erfassen und Anzeigen der Alignment Verbindungen in den bestehenden Formularen und Ansichten.
-* Sicherstellen, dass die Visualisierung auch auf dem Smartphone funktioniert.
 
 ### Individuelle Beurteilungskriterien
 
 1. 250 Schichtentrennung (Applikation)
 2. 166 Coding-style - lesbarer Code
-3. 165 Implementierung von Lösungen (Programmieren)
+3. Performante Datenbeschaffung im Backend
 4. 164 Codierung: Fehlerbehandlung
 5. Versionsverwaltung mit Git (Source Code)
 6. Automatisierte Tests Backend + Frontend
@@ -140,8 +146,8 @@ Entwicklungsumgebung:
 
 Textverarbeitung und Diagramme:
 
-* Latex
-* draw.io / PlantUML / Mermaid
+* LaTex
+* draw.io
 
 Projektmethode:
 
@@ -149,9 +155,9 @@ Projektmethode:
 
 Konventionen:
 
-* Backend: Puzzle / Projekt Konvention
-* Frontend: Puzzle / Projekt Konvention
-* Git Commit Messages: https://docs.puzzle.ch/qm-guide/latest/source-code-management/index.html#_konvention_commit_message (eine Kopie im IPA Dokument ablegen da nicht öffentlich)
+* Backend: Projekt Konvention / Puzzle
+* Frontend: Projekt Konvention / Puzzle
+* Git Commit Messages: Projekt Konvention / https://docs.puzzle.ch/qm-guide/latest/source-code-management/index.html#_konvention_commit_message (eine Kopie im IPA Dokument ablegen da nicht öffentlich)
 
 ### Vorkenntnisse
 
@@ -165,6 +171,7 @@ Konventionen:
 ### Neue Lerninhalte
 
 * Visualisierung mit Cytoscape.js
+* Dokumentation mit LaTex erstellen
 
 ### Arbeiten in den letzten 6 Monaten
 
@@ -174,3 +181,7 @@ Konventionen:
 ### Bemerkungen
 
 Zusätzliche Verantwortliche Fachkraft: Paco Eggimann
+
+Wunschtermine für den 3. Expertenbesuch (Präsentationstermin der IPA-Arbeit):
+- Montag 22.4.2024: 8:00 Vormittag oder 13:00 Nachmittag
+- Donnerstag 25.4.2024: 8:00 Vormittag
