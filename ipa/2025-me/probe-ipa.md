@@ -25,17 +25,28 @@ Die Basis für die Software bildet das Webframework Ruby on Rails. Für das User
 
 ### Detaillierte Aufgabenstellung
 
-PoC Datenmodell Filterparameter
+Mit dieser Probe-IPA soll ein neues Konzept und Datenmodell für die Persistierung von Filter-Parametern erstellt werden. Anschliessend soll dieses Konzept in einem Proof of Concept (PoC) bei den Mailinglisten (Abos) umgesetzt werden.
+
+- Subscription, RelatedRoleType, PeopleFilter, 
+- 
+
+### Anforderungen
+
+
 
 
 #### Out of Scope - wird erst nach der Probe IPA umgesetzt
 
-* ...
-
+* Anpassungen Frontend/UI
+* Umbau/Migration Filter Personenlisten
 
 ### Individuelle Beurteilungskriterien
 
-keine für diese Probe-IPA, nur Standard-Kritieren
+1 Entwurf, Design (Programmierung)
+2 Dokumentation Datenbanken, Tabellen, etc.
+3 Visualisierungen / UML
+4 Problemanalyse (Programmieren)
+5 Versionsverwaltung mit Git (Source Code) 
 
 ### Mittel und Methoden
 
@@ -61,7 +72,7 @@ Projektmethode:
 
 Konventionen:
 
-* Backend: Es gilt der Ruby Style Guide (https://github.com/rubocop-hq/ruby-style-guide) und der Rails Style Guide (https://github.com/rubocop-hq/rails-style-guide) gemäss Rubocop Konfiguration des Projekts (https://github.com/puzzle/cryptopus/blob/master/.rubocop.yml)
+* Es gilt der Ruby Style Guide (https://github.com/rubocop-hq/ruby-style-guide) und der Rails Style Guide (https://github.com/rubocop-hq/rails-style-guide) gemäss Rubocop Konfiguration des Projekts (https://github.com/puzzle/cryptopus/blob/master/.rubocop.yml)
 
 ### Vorkenntnisse
 
@@ -71,6 +82,7 @@ Marc arbeitet bereits seit einigen Monaten an Features von Hitobito. Ausserdem h
 
 * Vorbereitung Dokumentvorlage
 * Ist-Analyse Personen-Filter Personen-Listen/Abos
+* Dokumentation in der Developer-Dokumentation der bestehenden Implementation von MailingLists, FilteredList, Personen-Filter
 
 ### Neue Lerninhalte
 
