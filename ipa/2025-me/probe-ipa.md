@@ -25,20 +25,29 @@ Die Basis für die Software bildet das Webframework Ruby on Rails. Für das User
 
 ### Detaillierte Aufgabenstellung
 
-Mit dieser Probe-IPA soll ein neues Konzept und Datenmodell für die Persistierung von Filter-Parametern erstellt werden. Anschliessend soll dieses Konzept in einem Proof of Concept (PoC) bei den Mailinglisten (Abos) umgesetzt werden.
+Mit dieser Probe-IPA soll ein neues Konzept und Datenmodell für die Persistierung von Filter-Parametern erstellt werden (rein Backend). Anschliessend soll dieses Konzept in einem Proof of Concept (PoC) bei einem Teil der Mailinglisten (Abos) umgesetzt werden.
 
-- Subscription, RelatedRoleType, PeopleFilter, 
-- 
+- Die Klassen Subscription, RelatedRoleType, PeopleFilter, usw. werden im neuen Konzept komplett ersetzt oder ggf. ergänzt
+- Eine Möglichkeit ist das PeopleFilter die Basis für das neue Konzept bilden
+- Es sollen 2-3 Grobkonzepte gegenüber gestellt werden und das ausgewählte Konzept detaillierter ausgearbeitet werden
 
-### Anforderungen
+#### PoC
 
+- Folgende Komponenten der MailingLists Filter sollen mit dem neuen Konzept im PoC umgesetzt werden:
+  - Globale Bedingungen > Sprache
+  - Personen
+  - Ausgeschlossene Personen
+  - Optional: Gruppen / Rollen
 
+- Persistierte Subscriptions/Filter müssen für den PoC vorerst nicht migriert werden
+- Die nicht erwähnten Komponenten müssen nicht mehr funktionieren
+- Die erwähnten Komponenten (ohne Optionale) funktionieren im UI und haben eine minimale, funktionierende Testabdeckung (happy path)
 
+#### Out of Scope - wird nicht oder erst nach der Probe IPA umgesetzt
 
-#### Out of Scope - wird erst nach der Probe IPA umgesetzt
-
-* Anpassungen Frontend/UI
-* Umbau/Migration Filter Personenlisten
+* Konzept und Anpassungen Frontend/UI
+* PoC Umbau/Migration People Filter Personenlisten
+* JSON API Filter (Grafiti)
 
 ### Individuelle Beurteilungskriterien
 
