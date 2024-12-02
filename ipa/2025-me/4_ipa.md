@@ -9,8 +9,9 @@ Hitobito: Neue Generation von Personen-Filtern
 ### Beschreibung
 
 Eines der Kernfunktionalitäten von Hitobito ist das Filtern via vom Benutzer definierten Kriterien von Personen auf Personenlisten und Abos. Diese Funktionalität ist in den über 10 Jahren seit es Hitobito gibt oft erweitert worden. Durch die vielen neuen Filtermöglichkeiten wurde speziell das UI immer komplexer und unübersichtlicher. Die Personen-Filteroptionen für Personenlisten und die der Abos sehen ähnlich aus, weisen aber diverse nicht offensichtliche Unterschiede auf.
-Mit dieser IPA soll eine neue Generation von Personen-Filtern für Hitobito entwickelt werden. Diese soll die bestehenden Filter im UI ...
-Die technische Grundlage dazu wurde bereits als Vorbereitung gemacht. Nun Umbau UI mit dieser IPA ...
+Mit dieser IPA soll eine neue Generation von Personen-Filtern für Hitobito entwickelt werden. Die bestehenden Filter im UI sollten überarbeitet und nach neuem Mockup umgesetzt werden, so dass sowohl Abo- wie auch Personenfilter nach dem gleichen Muster aufgebaut sind.
+
+Die technische Grundlage dazu wurde bereits als Vorbereitung gemacht. 
 
 ## Detailbeschrieb (ENTWURF)
 
