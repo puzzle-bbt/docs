@@ -13,7 +13,7 @@ Mit dieser IPA soll eine neue Generation von Personen-Filtern für Hitobito entw
 
 Die technische Grundlage dazu wurde bereits als Vorbereitung gemacht. 
 
-## Detailbeschrieb (ENTWURF)
+## Detailbeschrieb
 
 ### Titel der Arbeit
 
