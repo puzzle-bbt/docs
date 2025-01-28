@@ -1,4 +1,4 @@
-# IPA (ENTWURF)
+# IPA
 
 ## Grobbeschrieb
 
