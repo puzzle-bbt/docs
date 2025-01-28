@@ -20,33 +20,34 @@ Die technische Grundlage dazu wurde bereits als Vorbereitung gemacht.
 Hitobito: Neue Generation von Personen-Filtern
 
 ### Ausgangslage
+Hitobito ist eine Open Source Webapplikation zum Verwalten von Mitgliedern, Events und vielem mehr. Die Ruby on Rails Applikation wurde 2012 von Puzzle ITC initiiert und wird stets weiterentwickelt.
 
-...
+Die Basis für die Software bildet das Webframework Ruby on Rails. Für das User Interface wird neben statischer Technologie wie HTML und CSS auch JavaScript oder Hotwire verwendet. Der komplette Source-Code steht auf Github zur Verfügung: https://github.com/hitobito
 
 ### Detaillierte Aufgabenstellung
 
-Diese IPA befasst sich ...
-
-- Hotwire
-- Gemäss Konzept UI/Mockups
-- Filter Personen-Listen, Abos -> Anforderungen ausformulieren, z.B. Es kann nach dem Gruppentyp gefiltert werden
-- Optionale Anforderungen ergänzen, vermutlich kann während der Zeit der IPA nicht alle Filter komplett Umgesetzt werden
-- ...
-
+Mit dieser IPA soll ein neues UI mit Hotwire für die Persistierung von Filter-Parametern im Hitobito Generic-Wagon erstellt werden (rein Frontend). 
+- Die Personenlisten- und Abonnementenansicht werden mit dem neuen UI ersetzt.
+- Die neue Ansicht wird nach einem gegebenen Mockup umgesetzt.
+- Filter Personen-Listen: Funktionalität bleibt wie bisher bestehen und wird durch das neue UI nicht beeinträchtigt.
+- Filter Abos: Die Globalen Bedingungen werden für die Filterung angepasst, ausgeschlossen von den Anpassungen sind die Filterung
+durch die Rolle, Gruppen, Events, People oder die Exclusion von People.
 
 #### Out of Scope - wird erst nach der IPA umgesetzt
 
-- ...
+- Filterung für Rollen, Gruppen, Events, People bei Abonnementen.
+- Anpassungen der Ansicht in den anderen Wagons.
+- Anpassungen der bisher bestehenden Tests in Hitobito welche die zu erweiternden Ansichten betreffen.
 
 ### Individuelle Beurteilungskriterien
 
-1 Entwurf, Design (Programmierung)
-2 Dokumentation Datenbanken, Tabellen, etc.
-3 Visualisierungen / UML
-4 Bewertung von Aussagen
-5 Problemanalyse (Programmieren)
-6 Automatisierte Tests mit rspec
-7 Versionsverwaltung mit Git (Source Code) 
+1. Entwurf, Design (Programmierung)
+2. Dokumentation Datenbanken, Tabellen, etc.
+3. Visualisierungen / UML
+4. Bewertung von Aussagen
+5. Problemanalyse (Programmieren)
+6. Automatisierte Tests mit rspec
+7. Versionsverwaltung mit Git (Source Code) 
 
 ### Mittel und Methoden
 
@@ -57,7 +58,7 @@ Technologie und Plattform:
 
 Entwicklungsumgebung:
 
-* VS Code
+* Intellij 
 * Git, Github
 * Rake
 * Rubocop
@@ -80,29 +81,24 @@ Code der während dieser IPA entsteht soll auf ein privates Github Repo gepushed
 
 ### Vorkenntnisse
 
-Marc arbeitet bereits seit einigen Monaten an Features von Hitobito. Ausserdem hat er bereits seit dem 2. Lehrjahr Erfahrung auch in anderen Ruby on Rails Projekten gesammelt. In den Monaten vor der IPA hat es sich intensiv mit dem Thema ...
+Marc arbeitet bereits seit einigen Monaten an Features von Hitobito. Ausserdem hat er bereits seit dem 2. Lehrjahr Erfahrung auch in anderen Ruby on Rails Projekten gesammelt.
 
 ### Vorarbeiten
 
 * Vorbereitung Dokumentvorlage
-* Probe-IPA: ...
-* ...
+* Probe-IPA: Vereinheitlichung der Personenlisten- und Abonnementenfilterlogik
+* Entwurf eines Mockups
 
 ### Neue Lerninhalte
 
-MARC !
-Bei der Erarbeitung der Probe-IPA konnte Niklas bereits einige Erfahrungen bei einer solchen Migration sammeln. Aufbauend darauf vertieft er sein Wissen mit dieser IPA rund um das Thema Fulltext search mit PostgreSQL.
-Grundsätzlich ist Niklas aber bestens vetraut mit Hitobito, Ruby on Rails sowie dessen Datenbankanbindung.
+- Eigenständiges Umsetzen eines Designs nach gegebenem Mockup
+- Eigenständiges Projektmanagement während der IPA
 
 ### Arbeiten in den letzten 6 Monaten
 
-MARC !
 * Umsetzung diverser Features und Bugfixes für Hitobito (Ruby on Rails)
-* Probe-IPA: PoC MySQL zu PostgreSQL
-* Umstellung Hitobito von MySQL zu PostgreSQL (Anpassung vieler SQL Statements)
-* Umstellung Hitobito Development Docker Setup von MySQL zu PostgreSQL
-* Bootstrap 5.3 Upgrade Hitobito
+* Probe-IPA: Vereinheitlichung der Personenlisten- und Abonnementenfilterlogik
+* Postgresql Migration Hitobito
+* Ruby on Rails Migration Hitobito
 
 ### Bemerkungen
-
-Zusätzliche Verantwortliche Fachkraft: Robin Steiner 
