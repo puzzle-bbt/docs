@@ -4,11 +4,13 @@
 
 ### Titel
 
-Untertitel
+Hitobito: UI für Hintergrundjobs
 
 ### Beschreibung
 
-Beschreibung-Text
+Hitobito bietet den Anwendern verschiedene Funktionen, welche mit langlaufenden Hintergrundjobs implementiert werden. Das können zum Beispiel Jobs sein, welche Dateien für den Datenexport generieren.
+Bis jetzt gibt es für die Anwender kein UI, mit welchem sie den Status ihrer Hintergrundjobs sehen oder steuern können.
+Mit dieser IPA wird ein UI implementiert, welches dem Anwender alle eigenen laufenden, abgeschlossenen und abgebrochenen Hintergrundjobs anzeigt. Zu jedem Job wird Start- und Endzeitpunkt sowie der Jobstatus angezeigt. Im Fehlerfall wird bei abgebrochenen Jobs die Fehlermeldung mit Details zum Fehler angegeben. Jobs die in Zukunft starten können abgebrochen werden.
 
 ## Detailbeschrieb
 
