@@ -28,15 +28,14 @@ Bis jetzt gibt es für die Anwender kein UI, mit welchem sie den Status ihrer Hi
 
 ### Detaillierte Aufgabenstellung
 
-Mit dieser IPA wird ein UI implementiert, welches dem Anwender alle eigenen laufenden, abgeschlossenen und abgebrochenen Hintergrundjobs anzeigt. Zu jedem Job werden Attribute wie Jobstatus, Startzeitpunkt und Fortschritt angezeigt. 
+Mit dieser IPA wird ein UI implementiert, welches dem Anwender alle eigenen laufenden, abgeschlossenen und fehlgeschlagenen Hintergrundjobs anzeigt. Zu jedem Job werden Attribute wie Jobstatus, Startzeitpunkt und Fortschritt angezeigt. 
 
 * Ein auf jeder Seite sichtbares Icon verlinkt auf die Jobs Ansicht.
 * Die Jobs Ansicht listet alle vom Anwender gestarteten Jobs auf. Die Jobansicht aktualisiert sich regelmässig. Zu jedem Job sind folgende Angaben vorhanden:
   - ein geeignetes Icon zur Darstellung des Job Status: geplant, in Arbeit, abgeschlossen, error
   - die Bezeichnung des Jobs
-  - ein Fortschittsbalken zur Anzeige des aktuellen Standes eines laufenden Jobs. Falls der Job keinen Fortschritt meldet, dann wird der Balken mit "Animated stripes" angezeigt
+  - ein Fortschittsbalken zur Anzeige des aktuellen Standes eines laufenden Jobs sofern dieser Fortschrittsinformationen bereitstellt. Es ist erkennbar, wenn der Job keinen Fortschritt ausweist.
   - ein Downloadbutton falls am Job eine Datei angehängt ist (z.B. die Exportdatei bei Export Jobs)
-  - bei Jobs die in Zukunft starten ein Link mit Icon um den Job abzubrechen
 * Wenn ein Job abgeschlossen wird (erfolgreich oder mit Error), dann wird ein Toast angezeigt mit der Jobbezeichnung und einer Statusnachricht. Die Statusnachricht ist mit i18n übersetzt. Das Toast wird angezeigt unabhängig davon auf welcher Applikationsansicht der Anwender sich befindet.
 
 Das Feature wird im Core Wagon implementiert und muss mit dem "Generic" Wagon zusammen funktionieren.
@@ -56,15 +55,11 @@ Das Feature wird im Core Wagon implementiert und muss mit dem "Generic" Wagon zu
 15. Versionsverwaltung mit Git (Source Code) 
 16. Wartbarkeit des Codes
 17. Automatisierte Tests mit rspec
-18. A15: Instruktion
+18. Bewertung von Aussagen
 19. G01: Dokumentation fachlicher und technischer Anforderungen
 20. G08: Erarbeitung von Umsetzungsvarianten
 21. G11: Konforme Implementierung und Versionierung
-22. 
-
-3. Visualisierungen / UML
-4. Bewertung von Aussagen
-5. Problemanalyse (Programmieren)
+22. G16: Fehlerbehandlung und Protokollierung
 
 ### Mittel und Methoden
 
@@ -76,7 +71,7 @@ Technologie und Plattform:
 
 Entwicklungsumgebung:
 
-* Intellij 
+* Rubymine, VSCode
 * Git, Github
 * Rake
 * Rubocop
@@ -104,16 +99,14 @@ Jannik arbeitet bereits seit einigen Monaten an Features von Hitobito. Ausserdem
 ### Vorarbeiten
 
 * Vorbereitung Dokumentvorlage
-* Probe-IPA: TBD
 
 ### Neue Lerninhalte
 
-- Eigenständiges Umsetzen eines Designs nach gegebenem Mockup
-- Eigenständiges Projektmanagement während der IPA
+* Eigenständiges Projektmanagement während der IPA
+* Dokumentation mit LaTex erstellen
 
 ### Arbeiten in den letzten 6 Monaten
 
 * Umsetzung diverser Features und Bugfixes für Hitobito (Ruby on Rails)
-* Probe-IPA: TBD
 
 ### Bemerkungen

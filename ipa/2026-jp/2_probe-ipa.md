@@ -38,11 +38,16 @@ Dokumentation PoC
 
 ### Individuelle Beurteilungskriterien
 
-1 Entwurf, Design (Programmierung)
-2 Dokumentation Datenbanken, Tabellen, etc.
-3 Visualisierungen / UML
-4 Problemanalyse (Programmieren)
-5 Versionsverwaltung mit Git (Source Code) 
+13. G04: Überprüfung der technischen Machbarkeit
+14. G10: Einrichtung der Entwicklungs- und Laufzeitumgebung
+15. Versionsverwaltung mit Git (Source Code) 
+16. Wartbarkeit des Codes
+17. Automatisierte Tests mit rspec
+18. Bewertung von Aussagen
+19. G01: Dokumentation fachlicher und technischer Anforderungen
+20. G08: Erarbeitung von Umsetzungsvarianten
+21. G11: Konforme Implementierung und Versionierung
+22. G16: Fehlerbehandlung und Protokollierung
 
 ### Mittel und Methoden
 
@@ -70,7 +75,7 @@ Projektmethode:
 
 Konventionen:
 
-Es gilt der Ruby Style Guide (https://github.com/rubocop-hq/ruby-style-guide) und der Rails Style Guide (https://github.com/rubocop-hq/rails-style-guide) gemäss Rubocop Konfiguration des Projekts (https://github.com/hitobito/hitobito/blob/master/.rubocop.yml)
+Es gilt die Rubocop Konfiguration des Projektes. Was nicht durch die Rubocop Konfiguration abgedekt ist, soll gemäss Ruby Style Guide (https://github.com/rubocop-hq/ruby-style-guide) und der Rails Style Guide (https://github.com/rubocop-hq/rails-style-guide) gehandhabt werden.
 * Git Commit Messages: https://docs.puzzle.ch/qm-guide/latest/source-code-management/index.html#_konvention_commit_message (eine Kopie im IPA Dokument ablegen da nicht öffentlich)
 
 Code der während dieser Probe IPA entsteht soll auf ein privates Github Repo gepushed werden. Die VFs haben dabei stets Lese-Rechte
