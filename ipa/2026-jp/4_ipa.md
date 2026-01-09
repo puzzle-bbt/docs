@@ -4,13 +4,15 @@
 
 ### Titel
 
-Untertitel
+Hitobito: UI für Hintergrundjobs
 
 ### Beschreibung
 
-Beschreibung-Text
+Hitobito bietet den Anwendern verschiedene Funktionen, welche mit langlaufenden Hintergrundjobs implementiert werden. Das können zum Beispiel Jobs sein, welche Dateien für den Datenexport generieren.
+Bis jetzt gibt es für die Anwender kein UI, mit welchem sie den Status ihrer Hintergrundjobs sehen oder steuern können.
+Mit dieser IPA wird ein UI implementiert, welches dem Anwender alle eigenen laufenden, abgeschlossenen und abgebrochenen Hintergrundjobs anzeigt. Zu jedem Job wird Start- und Endzeitpunkt sowie der Jobstatus angezeigt. Im Fehlerfall wird bei abgebrochenen Jobs die Fehlermeldung mit Details zum Fehler angegeben. Jobs die in Zukunft starten können abgebrochen werden.
 
-## Detailbeschrieb
+## Detailierte Aufgabenstellung
 
 ### Titel der Arbeit
 
@@ -21,34 +23,55 @@ Hitobito ist eine Open Source Webapplikation zum Verwalten von Mitgliedern, Even
 
 Die Basis für die Software bildet das Webframework Ruby on Rails. Für das User Interface wird neben statischer Technologie wie HTML und CSS auch JavaScript oder Hotwire verwendet. Der komplette Source-Code steht auf Github zur Verfügung: https://github.com/hitobito
 
+Hitobito bietet den Anwendern verschiedene Funktionen, welche mit langlaufenden Hintergrundjobs implementiert werden. Das können zum Beispiel Jobs sein, welche Dateien für den Datenexport generieren.
+Bis jetzt gibt es für die Anwender kein UI, mit welchem sie den Status ihrer Hintergrundjobs sehen oder steuern können.
+
 ### Detaillierte Aufgabenstellung
 
-Mit dieser IPA soll...
+Mit dieser IPA wird ein UI implementiert, welches dem Anwender alle eigenen laufenden, abgeschlossenen und fehlgeschlagenen Hintergrundjobs anzeigt. Zu jedem Job werden Attribute wie Jobstatus, Startzeitpunkt und Fortschritt angezeigt. 
+
+* Ein auf jeder Seite sichtbares Icon verlinkt auf die Jobs Ansicht.
+* Die Jobs Ansicht listet alle vom Anwender gestarteten Jobs auf. Die Jobansicht aktualisiert sich regelmässig. Zu jedem Job sind folgende Angaben vorhanden:
+  - ein geeignetes Icon zur Darstellung des Job Status: geplant, in Arbeit, abgeschlossen, error
+  - die Bezeichnung des Jobs
+  - ein Fortschittsbalken zur Anzeige des aktuellen Standes eines laufenden Jobs sofern dieser Fortschrittsinformationen bereitstellt. Es ist erkennbar, wenn der Job keinen Fortschritt ausweist.
+  - ein Downloadbutton falls am Job eine Datei angehängt ist (z.B. die Exportdatei bei Export Jobs)
+* Wenn ein Job abgeschlossen wird (erfolgreich oder mit Error), dann wird ein Toast angezeigt mit der Jobbezeichnung und einer Statusnachricht. Die Statusnachricht ist mit i18n übersetzt. Das Toast wird angezeigt unabhängig davon auf welcher Applikationsansicht der Anwender sich befindet.
+
+Das Feature wird im Core Wagon implementiert und muss mit dem "Generic" Wagon zusammen funktionieren.
 
 #### Out of Scope - wird erst nach der IPA umgesetzt
 
-- Out of Scope
+* Das Icon mit Link auf die Jobs Ansicht soll dynamisch anzeigen, ob für den Anwender Hintergrundjobs am Laufen sind. Im Rahmen der IPA wird ein statisches Icon eingebaut.
+* Sortierbarkeit und Pagination der Jobs Liste 
+* Anpassen des DownloadCleanerJob dass eine durch die Jobs definierte Aufbewahrungsfrist berücksichtigt wird.
+* Anpassungen der bisher bestehenden Tests in Hitobito welche von den Anpassungen betroffen sind.
+* Allfällige Anpassungen in den anderen Wagons abgesehen von "Generic" Wagon.
 
 ### Individuelle Beurteilungskriterien
 
-1. Entwurf, Design (Programmierung)
-2. Dokumentation Datenbanken, Tabellen, etc.
-3. Visualisierungen / UML
-4. Bewertung von Aussagen
-5. Problemanalyse (Programmieren)
-6. Automatisierte Tests mit rspec
-7. Versionsverwaltung mit Git (Source Code) 
+13. G04: Überprüfung der technischen Machbarkeit
+14. G10: Einrichtung der Entwicklungs- und Laufzeitumgebung
+15. Versionsverwaltung mit Git (Source Code) 
+16. Wartbarkeit des Codes
+17. Automatisierte Tests mit rspec
+18. Bewertung von Aussagen
+19. G01: Dokumentation fachlicher und technischer Anforderungen
+20. G08: Erarbeitung von Umsetzungsvarianten
+21. G11: Konforme Implementierung und Versionierung
+22. G16: Fehlerbehandlung und Protokollierung
 
 ### Mittel und Methoden
 
 Technologie und Plattform:
 
-* Ruby, Ruby on Rails, Hotwire, Active Record
-* PostgreSQL
+* Ruby, Ruby on Rails
+* Javascript, Hotwire
+* Active Record, PostgreSQL
 
 Entwicklungsumgebung:
 
-* Intellij 
+* Rubymine, VSCode
 * Git, Github
 * Rake
 * Rubocop
@@ -76,17 +99,14 @@ Jannik arbeitet bereits seit einigen Monaten an Features von Hitobito. Ausserdem
 ### Vorarbeiten
 
 * Vorbereitung Dokumentvorlage
-* Probe-IPA: TBD
-* Entwurf eines Mockups
 
 ### Neue Lerninhalte
 
-- Eigenständiges Umsetzen eines Designs nach gegebenem Mockup
-- Eigenständiges Projektmanagement während der IPA
+* Eigenständiges Projektmanagement während der IPA
+* Dokumentation mit LaTex erstellen
 
 ### Arbeiten in den letzten 6 Monaten
 
 * Umsetzung diverser Features und Bugfixes für Hitobito (Ruby on Rails)
-* Probe-IPA: TBD
 
 ### Bemerkungen
