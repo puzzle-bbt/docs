@@ -28,7 +28,7 @@ Bis jetzt gibt es für die Anwender kein UI, mit welchem sie den Status ihrer Hi
 
 ### Detaillierte Aufgabenstellung
 
-Mit dieser IPA wird ein UI implementiert, welches dem Anwender alle eigenen laufenden, abgeschlossenen und abgebrochenen Hintergrundjobs anzeigt. Zu jedem Job werden Attribute wie Jobstatus, Startzeitpunkt und Fortschritt angezeigt. Jobs die in Zukunft starten können abgebrochen werden.
+Mit dieser IPA wird ein UI implementiert, welches dem Anwender alle eigenen laufenden, abgeschlossenen und abgebrochenen Hintergrundjobs anzeigt. Zu jedem Job werden Attribute wie Jobstatus, Startzeitpunkt und Fortschritt angezeigt. 
 
 * Ein auf jeder Seite sichtbares Icon verlinkt auf die Jobs Ansicht.
 * Die Jobs Ansicht listet alle vom Anwender gestarteten Jobs auf. Die Jobansicht aktualisiert sich regelmässig. Zu jedem Job sind folgende Angaben vorhanden:
@@ -36,6 +36,7 @@ Mit dieser IPA wird ein UI implementiert, welches dem Anwender alle eigenen lauf
   - die Bezeichnung des Jobs
   - ein Fortschittsbalken zur Anzeige des aktuellen Standes eines laufenden Jobs. Falls der Job keinen Fortschritt meldet, dann wird der Balken mit "Animated stripes" angezeigt
   - ein Downloadbutton falls am Job eine Datei angehängt ist (z.B. die Exportdatei bei Export Jobs)
+  - bei Jobs die in Zukunft starten ein Link mit Icon um den Job abzubrechen
 * Wenn ein Job abgeschlossen wird (erfolgreich oder mit Error), dann wird ein Toast angezeigt mit der Jobbezeichnung und einer Statusnachricht. Die Statusnachricht ist mit i18n übersetzt. Das Toast wird angezeigt unabhängig davon auf welcher Applikationsansicht der Anwender sich befindet.
 
 Das Feature wird im Core Wagon implementiert und muss mit dem "Generic" Wagon zusammen funktionieren.
