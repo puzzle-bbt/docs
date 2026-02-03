@@ -30,15 +30,22 @@ Bis jetzt gibt es für die Anwender kein UI, mit welchem sie den Status ihrer Hi
 
 Mit dieser IPA wird ein UI implementiert, welches dem Anwender alle eigenen laufenden, abgeschlossenen und fehlgeschlagenen Hintergrundjobs anzeigt. Zu jedem Job werden Attribute wie Jobstatus, Startzeitpunkt und Fortschritt angezeigt. 
 
-* Ein auf jeder Seite sichtbares Icon verlinkt auf die Jobs Ansicht.
-* Die Jobs Ansicht listet alle vom Anwender gestarteten Jobs auf. Die Jobansicht aktualisiert sich regelmässig. Zu jedem Job sind folgende Angaben vorhanden:
-  - ein geeignetes Icon zur Darstellung des Job Status: geplant, in Arbeit, abgeschlossen, error
-  - die Bezeichnung des Jobs
-  - ein Fortschittsbalken zur Anzeige des aktuellen Standes eines laufenden Jobs sofern dieser Fortschrittsinformationen bereitstellt. Es ist erkennbar, wenn der Job keinen Fortschritt ausweist.
-  - ein Downloadbutton falls am Job eine Datei angehängt ist (z.B. die Exportdatei bei Export Jobs)
-* Wenn ein Job abgeschlossen wird (erfolgreich oder mit Error), dann wird ein Toast angezeigt mit der Jobbezeichnung und einer Statusnachricht. Die Statusnachricht ist mit i18n übersetzt. Das Toast wird angezeigt unabhängig davon auf welcher Applikationsansicht der Anwender sich befindet.
+Funktionale Anforderungen:
 
-Das Feature wird im Core Wagon implementiert und muss mit dem "Generic" Wagon zusammen funktionieren.
+* Auf jeder Seite der Applikation ist ein statisches Icon in der Navigation/Header integriert, das per Klick direkt auf die neue "Jobs-Ansicht" verlinkt. Es soll das FontAwesome `bars-progress` Icon verwendet werden.
+* Jobs Ansicht: Eine neue Ansicht listet alle Hintergrundjobs auf, die vom aktuell angemeldeten Anwender gestartet wurden.  
+  Die Jobansicht aktualisiert sich regelmässig automatisch ohne dass der Anwender die Seite manuell neu laden muss. Zu jedem Job sind folgende Angaben vorhanden:
+  - Ein geeignetes Icon zur Darstellung des Job Status: geplant, in Arbeit, abgeschlossen, error.
+  - Bezeichnung des Jobs: es wird der Name der Job Klasse angezeigt.
+  - Ein Fortschrittsbalken zur Anzeige des aktuellen Standes eines laufenden Jobs sofern dieser Fortschrittsinformationen bereitstellt. Wenn der Job keinen Fortschritt ausweist wird statt dem Fortschrittsbalken ein Hinweis-Text angezeigt.
+  - Jobs können Dateianhänge haben (z.B. die Exportdatei bei Export Jobs). Wenn am Job eine Datei angehängt ist, wird ein Downloadlink angezeigt.
+* Globale Benachrichtigung von Statusänderungen: Wenn ein Job erfolgreich abgeschlossen wird oder fehlschlägt, dann wird ein Toast angezeigt mit der Jobbezeichnung und einer Statusnachricht. Das Toast wird angezeigt unabhängig davon auf welcher Applikationsansicht der Anwender sich befindet.
+
+Nicht-funktionale Anforderungen:
+
+* Das Feature wird im Core Wagon implementiert und muss mit dem "Generic" Wagon zusammen funktionieren.
+* Hinterlegte Texte müssen mit I18n internationalisiert sein.
+* N+1 Queries müssen vermieden werden.
 
 #### Out of Scope - wird erst nach der IPA umgesetzt
 
@@ -47,6 +54,10 @@ Das Feature wird im Core Wagon implementiert und muss mit dem "Generic" Wagon zu
 * Anpassen des DownloadCleanerJob dass eine durch die Jobs definierte Aufbewahrungsfrist berücksichtigt wird.
 * Anpassungen der bisher bestehenden Tests in Hitobito welche von den Anpassungen betroffen sind.
 * Allfällige Anpassungen in den anderen Wagons abgesehen von "Generic" Wagon.
+
+#### Lieferobjekte
+
+* Source Code: Implementierung des Features im Core Wagon, bereitgestellt als Pull Request in einem privaten Github Repository. Der Code ist mit dem Generic Wagon lauffähig.
 
 ### Individuelle Beurteilungskriterien
 
